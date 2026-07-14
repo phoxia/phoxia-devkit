@@ -10,6 +10,7 @@
 
   $effect(() => {
     initLocale();
+    document.documentElement.dataset.hydrated = "true";
     return initTheme();
   });
 </script>

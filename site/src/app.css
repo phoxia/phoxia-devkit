@@ -895,6 +895,9 @@ footer {
     align-items: center;
     text-align: center;
   }
+  .footer-group:last-child {
+    grid-column: 1 / -1;
+  }
   .footer-bottom {
     align-items: center;
     flex-direction: column;

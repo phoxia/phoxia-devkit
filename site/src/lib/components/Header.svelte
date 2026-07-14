@@ -20,7 +20,7 @@
 <a class="skip" href="#content">{landing.skip}</a>
 <header class="site-header">
   <a class="brand" href="/" aria-label={landing.brandHome}><img src={luxHappy} alt="" /><span>Phoxia <b>DevKit</b></span></a>
-  <nav aria-label={landing.primary}><a href="#product">{landing.product}</a><a href="#how">{landing.how}</a><a href="/docs">{copy.docs}</a></nav>
+  <nav aria-label={landing.primary}><a href="/#product">{landing.product}</a><a href="/#how">{landing.how}</a><a href="/docs">{copy.docs}</a></nav>
   <div class="header-actions">
     <button class="control-button" type="button" title={`${copy.language}: ${localeNames[nextLocale]}`} aria-label={`${copy.language}: ${localeNames[nextLocale]}`} onclick={() => setLocale(nextLocale)}><Languages size={15} aria-hidden="true" /><span>{nextLocale === "pt-BR" ? "PT" : "EN"}</span></button>
     <button class="control-button icon-only" type="button" title={`${copy.theme}: ${themeLabel}`} aria-label={`${copy.theme}: ${themeLabel}`} onclick={cycleTheme}><ThemeIcon size={15} aria-hidden="true" /></button>

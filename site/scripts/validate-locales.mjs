@@ -2,9 +2,11 @@ import { SUPPORTED_LOCALES } from "../src/lib/i18n/locales.ts";
 import { localeNames, translations } from "../src/lib/i18n/content.ts";
 import { validateLocaleSet } from "../src/lib/i18n/validate.ts";
 import { landingTranslations } from "../src/lib/i18n/landing.ts";
+import { legalTranslations } from "../src/lib/i18n/legal.ts";
 
 validateLocaleSet(translations);
 validateLocaleSet(landingTranslations);
+validateLocaleSet(legalTranslations);
 for (const locale of SUPPORTED_LOCALES) {
   if (!translations[locale])
     throw new Error(`${locale}: translation is missing`);

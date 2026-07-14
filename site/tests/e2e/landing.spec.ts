@@ -207,6 +207,11 @@ test("lays out the rich footer without mobile overflow", async ({ page }, testIn
     await expect(page.locator(".footer-brand")).toHaveCSS("align-items", "center");
     await expect(page.locator(".footer-bottom")).toHaveCSS("align-items", "center");
     await expect(page.locator(".footer-bottom")).toHaveCSS("text-align", "center");
+    const [nav, trust] = await Promise.all([
+      page.locator(".footer-nav").boundingBox(),
+      page.locator(".footer-group").last().boundingBox(),
+    ]);
+    expect((trust?.x ?? 0) + (trust?.width ?? 0) / 2).toBeCloseTo((nav?.x ?? 0) + (nav?.width ?? 0) / 2, 0);
   }
 });
 
