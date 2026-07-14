@@ -143,6 +143,21 @@ test("stops workflow motion when reduced motion is requested", async ({ page }) 
     await expect(step).toHaveCSS("opacity", "1");
 });
 
+test("fills repository impact rows and avoids mobile overflow", async ({ page }, testInfo) => {
+  await page.goto("/");
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
+  expect(overflow).toBe(false);
+  if (testInfo.project.name === "desktop-1440") {
+    const boxes = await page.locator(".impact-card").evaluateAll((items) => items.map((item) => item.getBoundingClientRect()));
+    expect(boxes[0].width).toBeCloseTo(boxes[1].width, 0);
+    expect(boxes[3].width).toBeGreaterThan(boxes[0].width);
+    expect(boxes[4].width).toBeCloseTo(boxes[3].width, 0);
+    const section = await page.locator('[data-section="problem"]').boundingBox();
+    const lux = await page.locator('[data-section="problem"] .lux-side').boundingBox();
+    expect((section?.x ?? 0) + (section?.width ?? 0) - ((lux?.x ?? 0) + (lux?.width ?? 0))).toBeLessThan(40);
+  }
+});
+
 test("uses offline fonts and 44px interactive targets", async ({ page }) => {
   const externalFonts: string[] = [];
   page.on("request", (request) => {

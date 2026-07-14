@@ -6,6 +6,8 @@
 - Added purposeful terminal and section motion with reduced-motion support.
 - Expanded the site footer with documentation, support, security and project resources.
 - Matched the compact Phoxia language and theme controls, integrated Lux into the problem heading and corrected the footer product message.
+- Consolidated the Kit landing into an eight-section product pipeline with distinct problem, file, impact, configuration and trust treatments.
+- Added an accessible responsive workflow timeline and reduced-motion fallback.
 
 ## 1.0.1 - 2026-07-14
 
