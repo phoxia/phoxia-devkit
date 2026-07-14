@@ -239,9 +239,9 @@
     },
     {
       "path": "package.json",
-      "bytes": 702,
-      "words": 55,
-      "sha256": "25c9eb1417e5838e5081bedd6d7db5a8e200f25637418ed90ff70ba61616134e"
+      "bytes": 1203,
+      "words": 108,
+      "sha256": "fd0f2c611b13f78ac7193361b7935e357a844b6b27f77b1d672cd7f3e18d3f2d"
     },
     {
       "path": "plugins/core/.claude-plugin/plugin.json",
