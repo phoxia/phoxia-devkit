@@ -423,11 +423,6 @@ nav a:hover {
   flex: 0 0 auto;
   margin: 0 8px 9px 0;
 }
-.steps h3 {
-  margin: 0 0 5px;
-  font-size: 16px;
-}
-.steps p,
 .commands p,
 .safety p,
 .install > p {
@@ -443,44 +438,81 @@ nav a:hover {
 .row img {
   width: 60px;
 }
-.steps {
-  list-style: none;
-  padding: 0;
-  margin: 42px 0 0;
+.workflow-timeline {
+  position: relative;
+  margin-top: 48px;
+}
+.workflow-timeline ol {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.steps li {
-  padding: 20px 15px;
-  border-top: 2px solid var(--amber);
+.timeline-track,
+.timeline-progress {
+  position: absolute;
+  top: 14px;
+  left: 10%;
+  height: 2px;
 }
-.steps li:nth-child(2) {
-  border-color: #d3803f;
+.timeline-track {
+  right: 10%;
+  background: var(--border-strong);
 }
-.steps li:nth-child(3) {
-  border-color: #b16372;
+.timeline-progress {
+  width: 80%;
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(90deg, var(--amber), var(--violet));
+  animation: timeline-travel 7s ease-in-out infinite;
 }
-.steps li:nth-child(4) {
-  border-color: #8f45a6;
+.timeline-progress::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--violet);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--violet) 70%, transparent);
+  transform: translateY(-50%);
 }
-.steps li:nth-child(5) {
-  border-color: #6d28d9;
+.timeline-step {
+  position: relative;
+  text-align: center;
+  opacity: 0.58;
+  animation: timeline-step-pulse 7s ease-in-out infinite;
+  animation-delay: calc(var(--step) * 1.05s);
 }
-.steps li > span {
+.timeline-step > span {
+  position: relative;
+  z-index: 2;
   display: grid;
   place-items: center;
-  width: 28px;
-  height: 28px;
-  margin-bottom: 18px;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 20px;
+  border: 2px solid var(--border-strong);
   border-radius: 50%;
-  background: var(--surface2);
-  font: 11px "JetBrains Mono";
+  background: var(--bg);
+  font: 11px "JetBrains Mono", monospace;
   color: var(--muted);
 }
-.steps p {
-  font: 11px/1.5 "JetBrains Mono";
-  overflow-wrap: anywhere;
+.timeline-step h3 {
+  margin: 0;
+  font-size: 15px;
+}
+@keyframes timeline-travel {
+  0%, 8% { transform: scaleX(0); }
+  78%, 100% { transform: scaleX(1); }
+}
+@keyframes timeline-step-pulse {
+  0%, 12%, 100% { opacity: 0.58; }
+  18%, 42% { opacity: 1; }
 }
 .commands {
   display: grid;
@@ -632,9 +664,6 @@ footer {
     grid-template-columns: 1fr;
     gap: 44px;
   }
-  .steps {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 @media (max-width: 600px) {
   .site-header {
@@ -698,8 +727,49 @@ footer {
   .split {
     gap: 35px;
   }
-  .steps {
-    grid-template-columns: 1fr 1fr;
+  .workflow-timeline {
+    margin-top: 36px;
+  }
+  .workflow-timeline ol {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .timeline-track,
+  .timeline-progress {
+    top: 15px;
+    bottom: 15px;
+    left: 14px;
+    width: 2px;
+    height: auto;
+  }
+  .timeline-track {
+    right: auto;
+  }
+  .timeline-progress {
+    transform: scaleY(0);
+    transform-origin: top;
+    animation-name: timeline-travel-mobile;
+  }
+  .timeline-progress::after {
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    transform: translateX(50%);
+  }
+  .timeline-step {
+    min-height: 54px;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+  }
+  .timeline-step > span {
+    margin: 0;
+  }
+  @keyframes timeline-travel-mobile {
+    0%, 8% { transform: scaleY(0); }
+    78%, 100% { transform: scaleY(1); }
   }
   .commands {
     gap: 30px;
@@ -731,6 +801,19 @@ footer {
   }
   main > .section:not(.hero) {
     animation: none;
+  }
+  .timeline-progress {
+    animation: none;
+    transform: scaleX(1);
+  }
+  .timeline-step {
+    animation: none;
+    opacity: 1;
+  }
+}
+@media (max-width: 600px) and (prefers-reduced-motion: reduce) {
+  .timeline-progress {
+    transform: scaleY(1);
   }
 }
 @media (prefers-reduced-motion: reduce) {

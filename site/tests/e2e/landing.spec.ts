@@ -128,6 +128,21 @@ test("uses distinct product components instead of a repeated card grid", async (
   await expect(page.locator(".profile-strip")).toHaveCount(1);
 });
 
+test("renders an ordered animated workflow", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator(".workflow-timeline")).toHaveCount(1);
+  await expect(page.locator(".timeline-step")).toHaveCount(5);
+  await expect(page.locator(".timeline-progress")).toHaveCount(1);
+});
+
+test("stops workflow motion when reduced motion is requested", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/");
+  await expect(page.locator(".timeline-progress")).toHaveCSS("animation-name", "none");
+  for (const step of await page.locator(".timeline-step").all())
+    await expect(step).toHaveCSS("opacity", "1");
+});
+
 test("uses offline fonts and 44px interactive targets", async ({ page }) => {
   const externalFonts: string[] = [];
   page.on("request", (request) => {
