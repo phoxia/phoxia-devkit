@@ -1,0 +1,37 @@
+{
+  "name": "@phoxia/devkit-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "preview": "vite preview",
+    "build": "vite build",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "test": "node --test src/**/*.test.ts",
+    "test:e2e": "playwright test",
+    "validate:locales": "node scripts/validate-locales.mjs",
+    "validate:public": "node scripts/validate-public-boundary.mjs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/geist": "^5.2.9",
+    "@fontsource/inter": "~5.2.5",
+    "@fontsource/jetbrains-mono": "~5.2.5",
+    "@playwright/test": "~1.61.1",
+    "@sveltejs/adapter-static": "~3.0.0",
+    "@sveltejs/kit": "~2.69.2",
+    "@sveltejs/vite-plugin-svelte": "~5.1.0",
+    "@types/node": "~22.20.0",
+    "svelte": "~5.56.4",
+    "svelte-check": "~4.2.0",
+    "typescript": "~5.8.3",
+    "vite": "~6.4.3"
+  },
+  "overrides": {
+    "cookie": "0.7.2"
+  },
+  "dependencies": {
+    "@phoxia/lux": "0.1.1",
+    "lucide-svelte": "^0.468.0"
+  }
+}

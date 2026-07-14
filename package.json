@@ -1,0 +1,37 @@
+{
+  "name": "@phoxia/devkit",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phoxia/phoxia-devkit.git"
+  },
+  "homepage": "https://kit.phoxia.org",
+  "bugs": {
+    "url": "https://github.com/phoxia/phoxia-devkit/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "phxdk": "bin/phoxia-devkit.mjs",
+    "phoxia-devkit": "bin/phoxia-devkit.mjs"
+  },
+  "files": [
+    ".agents",
+    ".claude",
+    ".codex",
+    "bin",
+    "plugins",
+    "profiles",
+    "templates",
+    "tools/*.py",
+    "tools/*.ps1",
+    "tools/*.sh",
+    "MANIFEST.json"
+  ]
+}

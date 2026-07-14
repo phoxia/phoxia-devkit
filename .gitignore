@@ -1,0 +1,13 @@
+.phoxia/*.local.*
+.claude/settings.local.json
+site/node_modules/
+site/.svelte-kit/
+site/build/
+site/coverage/
+site/playwright-report/
+site/test-results/
+**/__pycache__/
+*.py[cod]
+.coverage
+node_modules/
+docs/superpowers

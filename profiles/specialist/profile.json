@@ -1,0 +1,53 @@
+{
+  "name": "specialist",
+  "displayName": "Specialist",
+  "claudePlugins": [
+    "plugins/core",
+    "plugins/specialist"
+  ],
+  "skills": [
+    {
+      "name": "phoxia-core-language",
+      "path": "plugins/core/skills/core-language"
+    },
+    {
+      "name": "phoxia-dev",
+      "path": "plugins/core/skills/dev"
+    },
+    {
+      "name": "phoxia-devkit",
+      "path": "plugins/core/skills/devkit"
+    },
+    {
+      "name": "phoxia-docs",
+      "path": "plugins/core/skills/docs"
+    },
+    {
+      "name": "phoxia-handoff",
+      "path": "plugins/core/skills/handoff"
+    },
+    {
+      "name": "phoxia-project",
+      "path": "plugins/core/skills/project"
+    },
+    {
+      "name": "phoxia-release",
+      "path": "plugins/core/skills/release"
+    },
+    {
+      "name": "phoxia-ui",
+      "path": "plugins/core/skills/ui"
+    },
+    {
+      "name": "phoxia-specialist",
+      "path": "plugins/specialist/skills/specialist"
+    }
+  ],
+  "agentDirs": [
+    "plugins/core/agents",
+    "plugins/specialist/agents"
+  ],
+  "defaultVisibility": "private",
+  "defaultLicenseModel": "proprietary",
+  "licensingQuestions": true
+}

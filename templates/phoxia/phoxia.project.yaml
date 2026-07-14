@@ -1,0 +1,40 @@
+apiVersion: kit.phoxia.org/v1
+kind: ProjectContext
+
+metadata:
+  name: replace-me
+  version: 0.1.0
+  channel: experimental
+
+ownership:
+  product: replace-me
+  domain: replace-me
+  maintainer: Lucas Christian
+
+repository:
+  visibility: public
+  languages: []
+  frameworks: []
+  applications:
+    - web
+    - api
+
+architecture:
+  acceptedRfc: []
+  authoritativeData: []
+  producedApis: []
+  consumedApis: []
+  producedEvents: []
+  consumedEvents: []
+
+data:
+  engine: PostgreSQL
+  extensions:
+    - vector
+  migrations: required
+  synchronize: false
+
+release:
+  independent: true
+  approval: Lucas Christian
+  provider: GitHub Actions

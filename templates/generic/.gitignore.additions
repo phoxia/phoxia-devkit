@@ -1,0 +1,6 @@
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/project-state.local.json
+.env
+.env.*
+secrets/

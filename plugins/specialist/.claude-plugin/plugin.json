@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "phoxia-specialist",
+  "displayName": "Phoxia Specialist Engineering",
+  "version": "2.0.0",
+  "description": "Phoxia-grade engineering for proprietary, internal, client and source-available projects.",
+  "author": {
+    "name": "Phoxia"
+  },
+  "license": "AGPL-3.0-only"
+}

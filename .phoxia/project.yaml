@@ -1,0 +1,23 @@
+apiVersion: kit.phoxia.org/v1
+kind: ProjectContext
+metadata:
+  name: "devkit"
+  description: "Public Claude Code and Codex development and governance toolkit."
+  profile: "phoxia"
+  configuredAt: "2026-07-14T13:43:31.712276+00:00"
+targets: ["claude", "codex"]
+layers: []
+ownership:
+  owner: "Lucas Christian"
+  company: "Phoxia"
+governance:
+  technicalMaintainer: "Lucas Christian"
+  pullRequestApprover: "Lucas Christian"
+  commercialAuthority: "Lucas Christian"
+repository:
+  visibility: "public"
+documentation:
+  visibility: "public"
+distribution:
+  model: "open-source"
+  legalReviewRequired: true

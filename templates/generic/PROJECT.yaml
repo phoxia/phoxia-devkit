@@ -1,0 +1,31 @@
+apiVersion: devkit.phoxia.dev/v1
+kind: Project
+
+metadata:
+  name: replace-me
+  version: 0.1.0
+  status: experimental
+
+product:
+  problem: replace-me
+  users: []
+  goals: []
+  nonGoals: []
+
+repository:
+  visibility: private
+  languages: []
+  frameworks: []
+  packageManager: replace-me
+
+quality:
+  legalMarkets: []
+  minorsLikely: unknown
+  advertising: none
+
+commands:
+  install: replace-me
+  build: replace-me
+  lint: replace-me
+  typecheck: replace-me
+  test: replace-me

@@ -1,0 +1,10 @@
+versioning: semver
+currentVersion: 0.1.0
+channel: experimental
+publicContract: unstable
+independent: true
+approval: maintainer
+automation:
+  provider: github-actions
+  createReleasePullRequest: true
+  publishAutomatically: false

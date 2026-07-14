@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/docs", "destination": "https://docs.phoxia.org/kit", "permanent": true },
+    { "source": "/quickstart", "destination": "https://docs.phoxia.org/kit/quickstart", "permanent": true },
+    { "source": "/quick-start", "destination": "https://docs.phoxia.org/kit/quickstart", "permanent": true },
+    { "source": "/changelog", "destination": "https://changelog.phoxia.org/kit", "permanent": true }
+  ]
+}

@@ -1,0 +1,15 @@
+[
+  {"id":"pt-greeting","route":"project guide","reference":"project-guide.md","concepts":["greeting","no repository-wide scan"]},
+  {"id":"new-project","route":"project init","reference":"project-guide.md","concepts":["new project","rigor"]},
+  {"id":"adopt-project","route":"project adopt","reference":"project-guide.md","concepts":["adoption"]},
+  {"id":"lost-context","route":"project guide","reference":"context-discovery.md","concepts":["RFC","ADR","Feature Record","tests"]},
+  {"id":"shared-nat","route":"review reliability","reference":"review-routing.md","concepts":["shared corporate NAT","429","organization"]},
+  {"id":"copyleft","route":"review licensing","reference":"review-routing.md","concepts":["network-copyleft","distribution","compatibility"]},
+  {"id":"restore","route":"operate restore","reference":"review-routing.md","concepts":["tested restore","backup"]},
+  {"id":"hobby","route":"project guide","reference":"project-guide.md","concepts":["hobby/prototype","avoid ceremony"]},
+  {"id":"production","route":"review full","reference":"project-guide.md","concepts":["production","capacity","observability"]},
+  {"id":"no-release","route":"preferences set","reference":"lifecycle-routing.md","concepts":["releaseSuggestions","disabled"]},
+  {"id":"direct","route":"mode direct","reference":"preferences-and-style.md","concepts":["fewest correct words","evidence"]},
+  {"id":"unknown-language","route":"help","reference":"commands.md","concepts":["responses follow the user's language"]},
+  {"id":"secret-exposure","route":"review security","reference":"preferences-and-style.md","concepts":["Critical warnings cannot be disabled"]}
+]

@@ -1,0 +1,279 @@
+export const landingTranslations = {
+  "en-US": {
+    eyebrow: "PHOXIA DEVKIT · OPEN SOURCE",
+    intro:
+      "For beginners and experienced developers alike. Works inside an existing repository, and you review every proposed change before it is applied.",
+    start: "Start the guided setup",
+    read: "Read the documentation",
+    evidence: "THE EVIDENCE THREAD",
+    evidenceTitle: "Every command stays tied to the reasons behind the change.",
+    evidenceNodes: [
+      ["Project context", ".phoxia/project.yaml"],
+      ["Assistant action", "Reads instructions first"],
+      ["Verified result", "Checks stay visible"],
+    ],
+    problem: "THE PROBLEM",
+    problemTitle: "AI moves fast. Your project context does not come along.",
+    problemCards: [
+      [
+        "Lost context",
+        "The assistant forgets how your project is structured and why.",
+      ],
+      [
+        "Ignored conventions",
+        "Edits arrive in a style your codebase does not follow.",
+      ],
+      [
+        "Stale documentation",
+        "Docs describe a version of the code that no longer exists.",
+      ],
+      [
+        "Unverified changes",
+        "Nothing confirms a change belongs before it lands.",
+      ],
+    ],
+    help: "HOW PHOXIA DEVKIT HELPS",
+    helpTitle:
+      "A shared source of truth both assistants read before they touch a file.",
+    helpText:
+      "Repository-specific context, project conventions, trusted workflows and proportional verification live alongside your code.",
+    workflow: "THE WORKFLOW",
+    workflowTitle: "Five steps, start to synchronized.",
+    profiles: "PUBLIC PROFILES & WORKFLOWS",
+    profilesTitle: "Share the setup that already works for your team.",
+    profileCards: [
+      [
+        "Official presets",
+        "Start from a Phoxia-maintained preset.",
+        "profiles/personal · profiles/work · profiles/phoxia · profiles/specialist",
+      ],
+      [
+        "Run a workflow",
+        "Use named workflows for common tasks.",
+        "~/.agents/skills/phoxia-dev · /phoxia-core:devkit",
+      ],
+      [
+        "Community publishing",
+        "Publishing public profiles is coming soon.",
+        "# coming soon",
+      ],
+    ],
+    files: "GENERATED FILES",
+    filesTitle: "Plain files, committed to your repository. Nothing hidden.",
+    verify: "Readable verification output",
+    verifyText:
+      "Run phxdk doctor and phxdk status to inspect the setup.",
+    transparency: "TRANSPARENCY",
+    transparencyTitle: "What changes in my repository?",
+    impact: [
+      ["Create", ".phoxia/project.yaml"],
+      ["Update", "AGENTS.md · CLAUDE.md"],
+      ["Preserve", "your source code"],
+      ["Remove", "nothing, by default"],
+      ["Backup", ".phoxia/backups/"],
+    ],
+    modes: "SETUP MODES",
+    modesTitle: "Choose a safe setup mode",
+    modeCards: [
+      [
+        "Add · recommended",
+        "Adds DevKit-managed configuration alongside existing configuration. Nothing is overwritten.",
+      ],
+      [
+        "Replace · review required",
+        "Replaces managed files only after review and backs them up.",
+      ],
+      [
+        "Update · maintenance",
+        "Refreshes managed blocks and preserves custom notes.",
+      ],
+    ],
+    trust: "TRUST & LOCAL BEHAVIOR",
+    trustTitle: "Runs on your machine. On your terms.",
+    trustCards: [
+      [
+        "Is an account required?",
+        "No account is required to configure a repository.",
+      ],
+      [
+        "Does setup upload my code?",
+        "No. Setup reads and writes local project files.",
+      ],
+      [
+        "Who approves changes?",
+        "You review affected files before applying them.",
+      ],
+    ],
+    newcomer: "NEW TO PHOXIA DEVKIT?",
+    newcomerTitle: "The recommended path",
+    newcomerSteps: [
+      "Install Phoxia DevKit",
+      "Select Claude Code, Codex or both",
+      "Choose Add, Replace or Update",
+      "Choose an official preset",
+      "Review affected files",
+      "Apply locally",
+      "Run verification",
+      "Learn advanced configuration",
+    ],
+    install: "THE RECOMMENDED PATH",
+    installTitle: "Set up your project in one command.",
+    installText: "Works with Claude Code and Codex, in any repository.",
+    github: "View on GitHub",
+    skip: "Skip to content",
+    product: "Product",
+    how: "How it works",
+    primary: "Primary",
+    footer:
+      "Keep AI-assisted development grounded in your project. Lux is a friendly community pet and development companion.",
+    community: "Community",
+    brandHome: "Phoxia DevKit home",
+    terminalQuestion: "Configure this repository?",
+    terminalReady: "Ready for review.",
+    copyCommand: "Copy setup command",
+    copy: "Copy",
+    copied: "Copied",
+    copyFailed: "Clipboard unavailable. Select and copy the command manually.",
+    evidenceAria: "Evidence thread from project context to verified result",
+  },
+  "pt-BR": {
+    eyebrow: "PHOXIA DEVKIT · CÓDIGO ABERTO",
+    intro:
+      "Para iniciantes e pessoas desenvolvedoras experientes. Funciona dentro de um repositório existente, e você revisa cada mudança proposta antes da aplicação.",
+    start: "Iniciar configuração guiada",
+    read: "Ler a documentação",
+    evidence: "FIO DE EVIDÊNCIAS",
+    evidenceTitle: "Cada comando permanece ligado aos motivos da mudança.",
+    evidenceNodes: [
+      ["Contexto do projeto", ".phoxia/project.yaml"],
+      ["Ação do assistente", "Lê as instruções primeiro"],
+      ["Resultado verificado", "As verificações ficam visíveis"],
+    ],
+    problem: "O PROBLEMA",
+    problemTitle:
+      "A IA avança rápido. O contexto do seu projeto não a acompanha.",
+    problemCards: [
+      [
+        "Contexto perdido",
+        "O assistente esquece como seu projeto é estruturado e por quê.",
+      ],
+      [
+        "Convenções ignoradas",
+        "As edições chegam em um estilo que sua base não segue.",
+      ],
+      [
+        "Documentação desatualizada",
+        "A documentação descreve uma versão que já não existe.",
+      ],
+      [
+        "Mudanças não verificadas",
+        "Nada confirma que uma mudança pertence ao projeto antes de entrar.",
+      ],
+    ],
+    help: "COMO O PHOXIA DEVKIT AJUDA",
+    helpTitle:
+      "Uma fonte compartilhada de verdade que ambos os assistentes leem antes de alterar um arquivo.",
+    helpText:
+      "Contexto específico, convenções, fluxos confiáveis e verificação proporcional ficam junto do código.",
+    workflow: "O FLUXO",
+    workflowTitle: "Cinco etapas, do início à sincronização.",
+    profiles: "PERFIS E FLUXOS PÚBLICOS",
+    profilesTitle:
+      "Compartilhe a configuração que já funciona para sua equipe.",
+    profileCards: [
+      [
+        "Predefinições oficiais",
+        "Comece com uma predefinição mantida pela Phoxia.",
+        "profiles/personal · profiles/work · profiles/phoxia · profiles/specialist",
+      ],
+      [
+        "Executar um fluxo",
+        "Use fluxos nomeados para tarefas comuns.",
+        "~/.agents/skills/phoxia-dev · /phoxia-core:devkit",
+      ],
+      [
+        "Publicação comunitária",
+        "A publicação de perfis públicos estará disponível em breve.",
+        "# em breve",
+      ],
+    ],
+    files: "ARQUIVOS GERADOS",
+    filesTitle:
+      "Arquivos simples, versionados no seu repositório. Nada oculto.",
+    verify: "Saída de verificação legível",
+    verifyText:
+      "Execute phxdk doctor e phxdk status para inspecionar a configuração.",
+    transparency: "TRANSPARÊNCIA",
+    transparencyTitle: "O que muda no meu repositório?",
+    impact: [
+      ["Criar", ".phoxia/project.yaml"],
+      ["Atualizar", "AGENTS.md · CLAUDE.md"],
+      ["Preservar", "seu código-fonte"],
+      ["Remover", "nada, por padrão"],
+      ["Backup", ".phoxia/backups/"],
+    ],
+    modes: "MODOS DE CONFIGURAÇÃO",
+    modesTitle: "Escolha um modo de configuração seguro",
+    modeCards: [
+      [
+        "Adicionar · recomendado",
+        "Adiciona a configuração gerenciada pelo DevKit junto da existente. Nada é sobrescrito.",
+      ],
+      [
+        "Substituir · revisão necessária",
+        "Substitui arquivos gerenciados somente após revisão e cria backup.",
+      ],
+      [
+        "Atualizar · manutenção",
+        "Atualiza blocos gerenciados e preserva notas personalizadas.",
+      ],
+    ],
+    trust: "CONFIANÇA E COMPORTAMENTO LOCAL",
+    trustTitle: "Executado na sua máquina. Nos seus termos.",
+    trustCards: [
+      [
+        "É necessário ter conta?",
+        "Nenhuma conta é necessária para configurar um repositório.",
+      ],
+      [
+        "A configuração envia meu código?",
+        "Não. Ela lê e grava arquivos locais do projeto.",
+      ],
+      [
+        "Quem aprova as mudanças?",
+        "Você revisa os arquivos afetados antes de aplicá-los.",
+      ],
+    ],
+    newcomer: "NOVO NO PHOXIA DEVKIT?",
+    newcomerTitle: "O caminho recomendado",
+    newcomerSteps: [
+      "Instale o Phoxia DevKit",
+      "Selecione Claude Code, Codex ou ambos",
+      "Escolha Adicionar, Substituir ou Atualizar",
+      "Escolha uma predefinição oficial",
+      "Revise os arquivos afetados",
+      "Aplique localmente",
+      "Execute a verificação",
+      "Conheça a configuração avançada",
+    ],
+    install: "O CAMINHO RECOMENDADO",
+    installTitle: "Configure seu projeto com um comando.",
+    installText: "Funciona com Claude Code e Codex, em qualquer repositório.",
+    github: "Ver no GitHub",
+    skip: "Pular para o conteúdo",
+    product: "Produto",
+    how: "Como funciona",
+    primary: "Principal",
+    footer:
+      "Mantenha o desenvolvimento assistido por IA fundamentado no seu projeto. Lux é o mascote da comunidade e companheiro de desenvolvimento.",
+    community: "Comunidade",
+    brandHome: "Página inicial do Phoxia DevKit",
+    terminalQuestion: "Configure este repositório?",
+    terminalReady: "Pronto para revisão.",
+    copyCommand: "Copiar comando de configuração",
+    copy: "Copiar",
+    copied: "Copiado",
+    copyFailed: "Área de transferência indisponível. Selecione e copie o comando manualmente.",
+    evidenceAria: "Fio de evidências do contexto do projeto ao resultado verificado",
+  },
+} as const;

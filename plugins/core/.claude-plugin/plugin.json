@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "phoxia-core",
+  "displayName": "Phoxia Core Development",
+  "version": "2.0.0",
+  "description": "Minimal multi-mode engineering, project, release, documentation and UI workflows.",
+  "author": {
+    "name": "Phoxia"
+  },
+  "license": "AGPL-3.0-only"
+}

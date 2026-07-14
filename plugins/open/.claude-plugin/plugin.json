@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "phoxia-open",
+  "displayName": "Phoxia Open Engineering",
+  "version": "2.0.0",
+  "description": "Phoxia project, RFC, Pulse, contract and open-source readiness workflows.",
+  "author": {
+    "name": "Phoxia"
+  },
+  "license": "AGPL-3.0-only"
+}

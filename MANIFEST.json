@@ -1,0 +1,1279 @@
+{
+  "package": "@phoxia/devkit",
+  "version": "1.0.0",
+  "fileCount": 212,
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "bytes": 439,
+      "words": 47,
+      "sha256": "ff7d836bb44194e0f78fbc8fb82f3a5866dec36b5f01c9d5771d13dce3fd5dc6"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature.yml",
+      "bytes": 398,
+      "words": 45,
+      "sha256": "2f1ab768fce7019db98c96706e7cbeb29ee307d5863e1156af4708a86b4b17e2"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "bytes": 273,
+      "words": 53,
+      "sha256": "f07724ea623b17b01eb63915a3342362ce44ad36aa3f66b99be9c59e15252087"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 365,
+      "words": 37,
+      "sha256": "bcefa6f40b6cd8b1a84b5ffb1deffc9ec0d8ea7e670620ca88b4f46a0f1710ae"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 464,
+      "words": 63,
+      "sha256": "7282b8632cf8b41bf7464a74cb40633dff8264acf90fe9cff64d58d59ba00a4d"
+    },
+    {
+      "path": "CLA.md",
+      "bytes": 1586,
+      "words": 225,
+      "sha256": "b83dba6637d7296ee0fda776bc52e157489be0c3a465a5f4088c4ce6352cf0d8"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "bytes": 894,
+      "words": 121,
+      "sha256": "37167a504d3413bb683efdfe818c90bcf8d11a20a3035549b1c577964e2f531c"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 675,
+      "words": 90,
+      "sha256": "418aeda032095524385c6c161a467e008a81ec4955472cf34ed831976df9700d"
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "bytes": 353,
+      "words": 53,
+      "sha256": "48102ed8bab65e881b7bb6239a8f4db8f6d3b3d994d2917f8f9cbfabafeb94a3"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 34523,
+      "words": 5535,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "PLUGIN-POLICY.md",
+      "bytes": 589,
+      "words": 79,
+      "sha256": "a0facccb031fd7871cfa6365611ae75fce9716e77303f06936cddee53cd3de04"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2031,
+      "words": 236,
+      "sha256": "ed618c04863bc399f76e41ee7d554836d75050e5a462dc09369ad5c8f14e46ed"
+    },
+    {
+      "path": "README.pt-BR.md",
+      "bytes": 1756,
+      "words": 207,
+      "sha256": "d621593e60ba3a18c0653ecca135c8d18deaa61e0e22b771b6b133e5c1db3fbb"
+    },
+    {
+      "path": "REPO-METADATA.md",
+      "bytes": 510,
+      "words": 59,
+      "sha256": "2b0fad54989fdc56942a95ddc9f9408793f7d53ec14575ea00c75158ad92ffae"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 219,
+      "words": 31,
+      "sha256": "5ba99ace9f4a694db1c77678e51732fa012de36832a510eada784858d3006dbc"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 396,
+      "words": 57,
+      "sha256": "2ae2b97f92e9c9ef622509195769163e0dc8aa2da0ac4c62b6996ff80a721b5b"
+    },
+    {
+      "path": "SUPPORT.md",
+      "bytes": 315,
+      "words": 41,
+      "sha256": "02b6a84064b1bb02e93a0c9701068d424f6daf3df261209f31e6b28854f1c24a"
+    },
+    {
+      "path": "bin/phoxia-devkit.mjs",
+      "bytes": 1055,
+      "words": 124,
+      "sha256": "bfedc56e3e625f3735fe3a6cd05a4b279b8701f0289d207aba6ae23ebdb43391"
+    },
+    {
+      "path": "docs/DESIGN-BACKLOG.md",
+      "bytes": 912,
+      "words": 114,
+      "sha256": "c43b5ee9d7713091fd53ceee944d48dbb8bacb8e2c6130c1b2b223c0bc42ac49"
+    },
+    {
+      "path": "docs/DOCUMENTATION-STANDARD.md",
+      "bytes": 695,
+      "words": 79,
+      "sha256": "7e00903c711df51aac17e2d20e87e2f2c7053094b0899a4d187c9a1b1ea4ad56"
+    },
+    {
+      "path": "docs/FAILURE-ABUSE-RECOVERY.md",
+      "bytes": 388,
+      "words": 52,
+      "sha256": "d64b0764211140f83d7226ebbf8d3024d9f7595d3e911b4fea07107a84981703"
+    },
+    {
+      "path": "docs/GLOBAL-LEGAL-READINESS.md",
+      "bytes": 1177,
+      "words": 166,
+      "sha256": "dd7a49f73c155d97c3c4cb4ea4b6df574c95ea50d2cb8760b71953d6e9711e9b"
+    },
+    {
+      "path": "docs/HOW-TO-USE-SKILLS.md",
+      "bytes": 608,
+      "words": 70,
+      "sha256": "8a7509c2d67f86a99241c51ed4bbeb300ca7343a1c72f492ca43205503357477"
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "bytes": 1162,
+      "words": 148,
+      "sha256": "774a2ae94fec9fde1d2267529b64a2536bfcad308a027d510855f8a00c186253"
+    },
+    {
+      "path": "docs/MULTI-AGENT-ARCHITECTURE.md",
+      "bytes": 1506,
+      "words": 201,
+      "sha256": "9b102f8367e4069a1d09ac97dba83a61b5800a7f935e4d3e40a0e6a1527e65ac"
+    },
+    {
+      "path": "docs/OVERLAYS.md",
+      "bytes": 714,
+      "words": 98,
+      "sha256": "55ea8b8d5f178a5b5cf5c26e3c2c2b0f04387c116e26082b9594d9b39a51e9be"
+    },
+    {
+      "path": "docs/PHOXIA-AUDIT.md",
+      "bytes": 580,
+      "words": 74,
+      "sha256": "0ab64776d3eae2d2ba26add4dabf12a9f10b84bc9e542b9beb2047539e3126dd"
+    },
+    {
+      "path": "docs/PROFILES.md",
+      "bytes": 519,
+      "words": 58,
+      "sha256": "735e8912ed7301eaee47b6764a7eb9b1beb07273237d7e6c9c260a3455c3c3ef"
+    },
+    {
+      "path": "docs/PROJECT-CONFIGURATION.md",
+      "bytes": 518,
+      "words": 62,
+      "sha256": "aa82be8b261cd0806e11e911395f34286cb71d5248123f3f1fe6bd91cf505fd4"
+    },
+    {
+      "path": "docs/PROJECT-LIFECYCLE.md",
+      "bytes": 922,
+      "words": 125,
+      "sha256": "396d0626af58db4198d0d7e11955c172737759c77c6571409794dd199460e2a7"
+    },
+    {
+      "path": "docs/PROJECT-NAMING.md",
+      "bytes": 433,
+      "words": 55,
+      "sha256": "bda0faa31cbab7ecc0410695ce48fb9accb5212fafc8e23fec57a78f2451ba24"
+    },
+    {
+      "path": "docs/RELEASE-VERSIONING.md",
+      "bytes": 974,
+      "words": 132,
+      "sha256": "44cb636836ad3d7de3b2f65239c9cf0c22351c36525c4a726289feb45a2302b5"
+    },
+    {
+      "path": "docs/RFC-GOVERNANCE.md",
+      "bytes": 989,
+      "words": 142,
+      "sha256": "14e9765a5ddd7ecee08f304673314e4398829c2638cefdb47ebd6f7c3e2e5dd8"
+    },
+    {
+      "path": "docs/TECHNOLOGY-DECISION-MATRIX.md",
+      "bytes": 1657,
+      "words": 275,
+      "sha256": "f749470100846d67556809ca876933b68f7415f51bbc1adc943ce1a60cde6181"
+    },
+    {
+      "path": "docs/VISUAL-FIDELITY.md",
+      "bytes": 690,
+      "words": 79,
+      "sha256": "d54cc37eb3f04c4695b4b89c29a5339fb35387c0fb91dd5b8c1b2040e19114da"
+    },
+    {
+      "path": "docs/records/FEAT-0001-safe-project-initialization.md",
+      "bytes": 334,
+      "words": 44,
+      "sha256": "bd8fd4449665d06f9b5d8d3c802cf54eda8f5381836f5b2a8ee5de9a24e0e892"
+    },
+    {
+      "path": "install-linux.sh",
+      "bytes": 148,
+      "words": 15,
+      "sha256": "1678af586487ed10e687cfa4e6be70af33b7862f16f08d0cc40dff996cc999fb"
+    },
+    {
+      "path": "install-macos.command",
+      "bytes": 148,
+      "words": 15,
+      "sha256": "1678af586487ed10e687cfa4e6be70af33b7862f16f08d0cc40dff996cc999fb"
+    },
+    {
+      "path": "install-windows.ps1",
+      "bytes": 437,
+      "words": 52,
+      "sha256": "abdb4b9ed7708f1d32d27b3b207ab1713c6b13cf76e89f3d17eb77d62ee96287"
+    },
+    {
+      "path": "package.json",
+      "bytes": 702,
+      "words": 55,
+      "sha256": "f29bb801fe3b4ba679930d1a0f44f43fcd5726fd7144fdbe55903de69c313dcd"
+    },
+    {
+      "path": "plugins/core/.claude-plugin/plugin.json",
+      "bytes": 344,
+      "words": 29,
+      "sha256": "84cd4d9af0729e10139bf205369a2b0c0336395db89b55f1c18cc7bc33c203a0"
+    },
+    {
+      "path": "plugins/core/README.md",
+      "bytes": 343,
+      "words": 36,
+      "sha256": "5cd00d0fa357b9e23ba0b06e77be237782143a08a9ce5844c710130808ab72dc"
+    },
+    {
+      "path": "plugins/core/agents/architect.md",
+      "bytes": 564,
+      "words": 76,
+      "sha256": "e5edf72b47b5d45fd2e535ab1de3bc452d41612a1a279c2e540be711773f7a94"
+    },
+    {
+      "path": "plugins/core/agents/explorer.md",
+      "bytes": 467,
+      "words": 72,
+      "sha256": "6c16b4e7e09aa5de69f2861aeb8615865794068b4a0c1462f894f6d4115ece95"
+    },
+    {
+      "path": "plugins/core/agents/reviewer.md",
+      "bytes": 481,
+      "words": 61,
+      "sha256": "0a8f46dd83776616e14af63445eb4bb02787f73326c9c5f5da1af5d31c457bb8"
+    },
+    {
+      "path": "plugins/core/agents/security.md",
+      "bytes": 515,
+      "words": 62,
+      "sha256": "31ff3355e68a5bcb9e15753c5ac7a2e8989182eed21315ed1038c4a3dbc4438e"
+    },
+    {
+      "path": "plugins/core/skills/core-language/SKILL.md",
+      "bytes": 993,
+      "words": 136,
+      "sha256": "3d989e77aaf1607ddbd3a5868b4ce3fdc6bf27ad4dcbbf908d007448d4a4c277"
+    },
+    {
+      "path": "plugins/core/skills/core-language/angular.md",
+      "bytes": 356,
+      "words": 52,
+      "sha256": "9b6102a5592b4b5c79f9c7948ef2f5861bf02a0f99915b6e21b8ffb8f02bd398"
+    },
+    {
+      "path": "plugins/core/skills/core-language/aspnet.md",
+      "bytes": 353,
+      "words": 51,
+      "sha256": "157c2951de8c4567fd986f6e92129192aecfc0f161e4fff964d58e870b8bfcfc"
+    },
+    {
+      "path": "plugins/core/skills/core-language/bash-powershell.md",
+      "bytes": 437,
+      "words": 72,
+      "sha256": "0c90a24fb2a8cf5541f0a528520cfe18442dd5c848df57d9c647573e208682c9"
+    },
+    {
+      "path": "plugins/core/skills/core-language/c.md",
+      "bytes": 556,
+      "words": 83,
+      "sha256": "7ab2a03645bff3fd02a8c2f6bbafcba7f631ef93d0e67c313958a2d5e4af3349"
+    },
+    {
+      "path": "plugins/core/skills/core-language/clojure.md",
+      "bytes": 420,
+      "words": 62,
+      "sha256": "964ebceb2586f7216eb11a54b6abd45dabcb72dff47216a9ed7ae3203abae9ec"
+    },
+    {
+      "path": "plugins/core/skills/core-language/common.md",
+      "bytes": 705,
+      "words": 96,
+      "sha256": "0ff79543389202f351f554dc8a17e24afae9ef345b56d33814297df6850a961c"
+    },
+    {
+      "path": "plugins/core/skills/core-language/cpp.md",
+      "bytes": 589,
+      "words": 85,
+      "sha256": "89ee3cc945e20213f89db80606c7f17239d96e734a573691e860f77474c20c21"
+    },
+    {
+      "path": "plugins/core/skills/core-language/csharp-dotnet.md",
+      "bytes": 595,
+      "words": 86,
+      "sha256": "e71ea9f084155be3dbec36cb8141e3ecd46bc238ed576a4b07c90d2bd157fdff"
+    },
+    {
+      "path": "plugins/core/skills/core-language/dart-flutter.md",
+      "bytes": 483,
+      "words": 72,
+      "sha256": "5eb5e45164b150ac97b2c4b96dec46ad0d105ae0291d50fbedf7c3d767a72b9b"
+    },
+    {
+      "path": "plugins/core/skills/core-language/data-ai.md",
+      "bytes": 470,
+      "words": 66,
+      "sha256": "e6a12fb6f5887a071ab975ae512182f362083509604ad95c8ac00bac898a1b39"
+    },
+    {
+      "path": "plugins/core/skills/core-language/delphi-object-pascal.md",
+      "bytes": 690,
+      "words": 90,
+      "sha256": "f39140936437585700347556963c7193eac6fc1a4ee09d0b0dc200364af51e66"
+    },
+    {
+      "path": "plugins/core/skills/core-language/dispatch.md",
+      "bytes": 719,
+      "words": 111,
+      "sha256": "af5d75ea2eeb25d1766c3fa17aff9d79eb5e4862a405e3cc993de8df7faf5872"
+    },
+    {
+      "path": "plugins/core/skills/core-language/django-fastapi.md",
+      "bytes": 417,
+      "words": 60,
+      "sha256": "d5bc4e1fd231ad211d4b6caec4e34956fd38c804a40d4c60bf65c16a1728c3e8"
+    },
+    {
+      "path": "plugins/core/skills/core-language/docker-kubernetes.md",
+      "bytes": 432,
+      "words": 64,
+      "sha256": "bec609c9f3ef2ca2def3a933dfa19b4d09cff9f48325c4feddd9c3c432611796"
+    },
+    {
+      "path": "plugins/core/skills/core-language/elixir-erlang.md",
+      "bytes": 513,
+      "words": 78,
+      "sha256": "9fda5577b2acccd86004cf7e5a1aae56be97e2e094aa3a4ac369c14828e9e37c"
+    },
+    {
+      "path": "plugins/core/skills/core-language/embedded.md",
+      "bytes": 433,
+      "words": 62,
+      "sha256": "bd9f66b35b19a665fdb7970cb4f1750780a33f559ca2509290219779b2ad047a"
+    },
+    {
+      "path": "plugins/core/skills/core-language/fsharp.md",
+      "bytes": 392,
+      "words": 60,
+      "sha256": "0a288fd52fe7699dded9660490e0ce2870a7eaa84352bb085721a9297232c575"
+    },
+    {
+      "path": "plugins/core/skills/core-language/gamedev.md",
+      "bytes": 441,
+      "words": 65,
+      "sha256": "014f31ac22bb0bdae5dfe7cbd4abe59ec5e86e084de8036a5ad20c948e68f840"
+    },
+    {
+      "path": "plugins/core/skills/core-language/go.md",
+      "bytes": 561,
+      "words": 84,
+      "sha256": "e5f7a48e865bec01753cf4d64d245ce48d0fc09b8a23dfc02252a80056ffa969"
+    },
+    {
+      "path": "plugins/core/skills/core-language/haskell.md",
+      "bytes": 408,
+      "words": 65,
+      "sha256": "fb9b105c2e49cfba6dd6463c8d1fd35aae3a0710e58717e6715f71cc314dec31"
+    },
+    {
+      "path": "plugins/core/skills/core-language/html-css-web.md",
+      "bytes": 439,
+      "words": 69,
+      "sha256": "936e7045493ebab6ea769f49c79a77354b77983c0edebde846ea86fc81fb78d4"
+    },
+    {
+      "path": "plugins/core/skills/core-language/java.md",
+      "bytes": 577,
+      "words": 89,
+      "sha256": "f3071d47b4aa824cdd3afdd6940f0939355541bde0c6ddd92e45e769180fa25b"
+    },
+    {
+      "path": "plugins/core/skills/core-language/julia.md",
+      "bytes": 426,
+      "words": 61,
+      "sha256": "3f916b6ae53b2fd9e3397ee71bd507a0dfe92be5634f3da944620515916117aa"
+    },
+    {
+      "path": "plugins/core/skills/core-language/kotlin.md",
+      "bytes": 495,
+      "words": 69,
+      "sha256": "9a2b278711c034454d92831d096d575b8820d7ddfb5d70985ef6723e575c1269"
+    },
+    {
+      "path": "plugins/core/skills/core-language/laravel.md",
+      "bytes": 353,
+      "words": 49,
+      "sha256": "f0c6cfc51e521c625c52e98501c84fce089dfbbbfd4f70260fc0dfc62cbe6e70"
+    },
+    {
+      "path": "plugins/core/skills/core-language/lua.md",
+      "bytes": 456,
+      "words": 72,
+      "sha256": "cb459efaf9686feb29a8a66b018a62b99183508583b4520384126853767ea5fa"
+    },
+    {
+      "path": "plugins/core/skills/core-language/nestjs-node.md",
+      "bytes": 482,
+      "words": 69,
+      "sha256": "29ac103daaa2b051f0d293ba3a916642b01647004993ff69850525eb1bfa1c5b"
+    },
+    {
+      "path": "plugins/core/skills/core-language/new-language-template.md",
+      "bytes": 527,
+      "words": 79,
+      "sha256": "9f681ffa94a1c7414ee127100785846df3fedc67efb76b55a7c54c94b30c3591"
+    },
+    {
+      "path": "plugins/core/skills/core-language/ocaml.md",
+      "bytes": 362,
+      "words": 57,
+      "sha256": "042c587548f33625b7624ced7be507c6e47713f16c100b90281f14951527c48a"
+    },
+    {
+      "path": "plugins/core/skills/core-language/php.md",
+      "bytes": 513,
+      "words": 76,
+      "sha256": "624e8e2984a004a36ec7ff63d508540085b35845ba0dae05417b4e97d2fb3f04"
+    },
+    {
+      "path": "plugins/core/skills/core-language/python.md",
+      "bytes": 672,
+      "words": 99,
+      "sha256": "203ab6b7f7855b85a5feed5bcdae609cfec3973d33fc1bd8fd24c82effafb420"
+    },
+    {
+      "path": "plugins/core/skills/core-language/r.md",
+      "bytes": 437,
+      "words": 63,
+      "sha256": "06801f837577b3093b43aee1f1a5d3e3f7c7ed99ceedbabd14743a65195bcc0d"
+    },
+    {
+      "path": "plugins/core/skills/core-language/rails.md",
+      "bytes": 412,
+      "words": 62,
+      "sha256": "ff1658304e212f886cd41b2cff22b6fff2a09b892dfe9d87c07bf097a0a57ae4"
+    },
+    {
+      "path": "plugins/core/skills/core-language/react-next.md",
+      "bytes": 477,
+      "words": 72,
+      "sha256": "c84d61e5ffea495c6c161a0511202445b515d5c90bffa099f3ffe84011a8a9fe"
+    },
+    {
+      "path": "plugins/core/skills/core-language/ruby.md",
+      "bytes": 526,
+      "words": 78,
+      "sha256": "caeaf6b415149d831d9b0d211269f011a53a680337e3a3eb240b353971e23ea6"
+    },
+    {
+      "path": "plugins/core/skills/core-language/rust.md",
+      "bytes": 666,
+      "words": 102,
+      "sha256": "43a305a0d0c29766fa37acd39943f8e1a2f34039b7a562959ce2b87e354d827d"
+    },
+    {
+      "path": "plugins/core/skills/core-language/scala.md",
+      "bytes": 442,
+      "words": 68,
+      "sha256": "0e232f32c7efad52eff803e73accd903229a20ef7b7497075c697243371d9bcb"
+    },
+    {
+      "path": "plugins/core/skills/core-language/solidity.md",
+      "bytes": 480,
+      "words": 66,
+      "sha256": "1327b10fc8747a62e887fea3f48cde2d899904d519cc4a2ee73eaa03092fe9c2"
+    },
+    {
+      "path": "plugins/core/skills/core-language/spring.md",
+      "bytes": 372,
+      "words": 53,
+      "sha256": "ab070468c8075a2c15ff02efa5596217230fd6c45fd1e5af2859a8e703fe38b7"
+    },
+    {
+      "path": "plugins/core/skills/core-language/sql.md",
+      "bytes": 517,
+      "words": 75,
+      "sha256": "6693bb29d69627558091447c6e3c548a6ba6ab911bb62b5e50c51ffe1f90eb9a"
+    },
+    {
+      "path": "plugins/core/skills/core-language/svelte-sveltekit.md",
+      "bytes": 414,
+      "words": 62,
+      "sha256": "05a33d18a27049fe6b84697592d7e5925447d8ca9c20d688952e1aa09865b6c7"
+    },
+    {
+      "path": "plugins/core/skills/core-language/swift-objectivec.md",
+      "bytes": 509,
+      "words": 78,
+      "sha256": "489e3822224a316746c70299957d4b047ac8965ee852901f2ee8f1d36a6329d1"
+    },
+    {
+      "path": "plugins/core/skills/core-language/terraform.md",
+      "bytes": 411,
+      "words": 63,
+      "sha256": "c573236997ed6a601d248c2c766e1ed07f67a09e34362bf653c25c45680a34c9"
+    },
+    {
+      "path": "plugins/core/skills/core-language/typescript-javascript.md",
+      "bytes": 692,
+      "words": 100,
+      "sha256": "06dff1a467c688dfafce0c5d115aac649fdf35a3f266ff7baaf804abbaaf197d"
+    },
+    {
+      "path": "plugins/core/skills/core-language/vue-nuxt.md",
+      "bytes": 348,
+      "words": 51,
+      "sha256": "efa55af62e9f02b9c619404bcc28ac94ca4114be5714bb2d5d47aaa655841c87"
+    },
+    {
+      "path": "plugins/core/skills/core-language/zig.md",
+      "bytes": 392,
+      "words": 62,
+      "sha256": "c774dc233d3d88025ae4c5fd5313c8775abfa9a90192ee5dc7bef1ed5342b42e"
+    },
+    {
+      "path": "plugins/core/skills/dev/SKILL.md",
+      "bytes": 869,
+      "words": 106,
+      "sha256": "f90a278dd7413866bb0689b9d6b17dedbebc6543d423b88ffd2c1ce772559011"
+    },
+    {
+      "path": "plugins/core/skills/devkit/SKILL.md",
+      "bytes": 1375,
+      "words": 169,
+      "sha256": "0c0d3f46fcc5c955b1bd43c2be9839e659634244bea5c6afc79296d391fdad2b"
+    },
+    {
+      "path": "plugins/core/skills/devkit/references/commands.md",
+      "bytes": 1151,
+      "words": 123,
+      "sha256": "7199d1456aa11fceefd0705fe37b9f0bcbef7650c08f0ef8e6a88a9392f3d888"
+    },
+    {
+      "path": "plugins/core/skills/devkit/references/context-discovery.md",
+      "bytes": 1158,
+      "words": 157,
+      "sha256": "161d99bf652b5a54eb8eeca562c5c17a137c3f9b4d276bf595deaad71e947d44"
+    },
+    {
+      "path": "plugins/core/skills/devkit/references/lifecycle-routing.md",
+      "bytes": 1094,
+      "words": 149,
+      "sha256": "ce0f0de79ec619cf6b0c3270a3b8521a38f5d87806ecd81a2952023b2ee67fb9"
+    },
+    {
+      "path": "plugins/core/skills/devkit/references/preferences-and-style.md",
+      "bytes": 1083,
+      "words": 141,
+      "sha256": "e2e413f461d24dfd2a72e485829c5bf0b1208615698f3fd34f6494c21e99ba6c"
+    },
+    {
+      "path": "plugins/core/skills/devkit/references/project-guide.md",
+      "bytes": 1083,
+      "words": 146,
+      "sha256": "0e07ee5125d311fb4fc157749ada27d7e9350c4e72a58018d1bd6a59a264aae7"
+    },
+    {
+      "path": "plugins/core/skills/devkit/references/review-routing.md",
+      "bytes": 1409,
+      "words": 174,
+      "sha256": "6c84607662f18af46f51529540ae2182f8901012576345b9728d4453f677feec"
+    },
+    {
+      "path": "plugins/core/skills/docs/SKILL.md",
+      "bytes": 473,
+      "words": 53,
+      "sha256": "1fbd93a78da409fadb6bdea1e68c75a307c1ecfb2c6a44708c4547385d3be8bd"
+    },
+    {
+      "path": "plugins/core/skills/handoff/SKILL.md",
+      "bytes": 341,
+      "words": 45,
+      "sha256": "d83b68f33d4a659c38e919b19905a5031bf833adf06be7bcc2747daa284bda90"
+    },
+    {
+      "path": "plugins/core/skills/project/SKILL.md",
+      "bytes": 1165,
+      "words": 141,
+      "sha256": "2440411c59ad9ce5bc1acaaa958218bdf5422b8506163aee72112d0ae58df19d"
+    },
+    {
+      "path": "plugins/core/skills/release/SKILL.md",
+      "bytes": 648,
+      "words": 84,
+      "sha256": "21de2f378f19128e45e333da0140c6723b36b4c915998c2549d6ae3c5abcbe37"
+    },
+    {
+      "path": "plugins/core/skills/ui/SKILL.md",
+      "bytes": 541,
+      "words": 68,
+      "sha256": "6402fcb07e7f5eafcfe9feda76ca6687278be8a77c79e9cb3af5f0be7fb4ee85"
+    },
+    {
+      "path": "plugins/open/.claude-plugin/plugin.json",
+      "bytes": 336,
+      "words": 29,
+      "sha256": "9dedf14cecbfff29a17be165b3409cb0d600b23a9e7171f1dda67bc3072d1978"
+    },
+    {
+      "path": "plugins/open/README.md",
+      "bytes": 217,
+      "words": 27,
+      "sha256": "700d4f2793196c9d2781a724c7527e5a5cdb7973e887d50e45a1230cdcfbae7f"
+    },
+    {
+      "path": "plugins/open/agents/phoxia-architect.md",
+      "bytes": 315,
+      "words": 36,
+      "sha256": "c077a438a234ec00044880340c72912a26566b0949ac6d29dc61833fa0c05415"
+    },
+    {
+      "path": "plugins/open/agents/phoxia-contract-reviewer.md",
+      "bytes": 341,
+      "words": 41,
+      "sha256": "9590935ef31525f932dd3bc0d590fd6fee93f6a5810bae463a42596b629e35d6"
+    },
+    {
+      "path": "plugins/open/skills/phoxia/SKILL.md",
+      "bytes": 1140,
+      "words": 136,
+      "sha256": "20c893ed0df7c40e8e6da992d63772fd51cd4957b90d42e1223fac20d81b7b83"
+    },
+    {
+      "path": "plugins/specialist/.claude-plugin/plugin.json",
+      "bytes": 364,
+      "words": 29,
+      "sha256": "ff82f62f896df0545773ecdb3827a1b485c4e962442f1c0aced8d8358ea3eb98"
+    },
+    {
+      "path": "plugins/specialist/README.md",
+      "bytes": 309,
+      "words": 35,
+      "sha256": "8dd203128140e71935a5929be666df7babb320ab511bf55b2d02fb94209c8e72"
+    },
+    {
+      "path": "plugins/specialist/agents/specialist-architect.md",
+      "bytes": 430,
+      "words": 48,
+      "sha256": "e48377c6d861c28b175e3aa2adec52a31a866f5b51c41b1f81f4da627ccf04c2"
+    },
+    {
+      "path": "plugins/specialist/agents/specialist-license-reviewer.md",
+      "bytes": 461,
+      "words": 53,
+      "sha256": "78fc91d2877ec351a5028a2dcb41a2725ff312c9cdb167d24ed23811f8b43b0d"
+    },
+    {
+      "path": "plugins/specialist/skills/specialist/SKILL.md",
+      "bytes": 1078,
+      "words": 125,
+      "sha256": "ac1649e18035129766f46349e460a37543b6264e19467ba0e2dfcdd9e344a458"
+    },
+    {
+      "path": "profiles/personal/AGENTS.md",
+      "bytes": 455,
+      "words": 68,
+      "sha256": "a57dce6211c7e27a7e3f9123008a3b04356038e17a5d417e7bac51cc0c6af08e"
+    },
+    {
+      "path": "profiles/personal/CLAUDE.md",
+      "bytes": 455,
+      "words": 68,
+      "sha256": "a57dce6211c7e27a7e3f9123008a3b04356038e17a5d417e7bac51cc0c6af08e"
+    },
+    {
+      "path": "profiles/personal/profile.json",
+      "bytes": 941,
+      "words": 69,
+      "sha256": "13fe98f10b9852d607f0562e623179cd44c99eab4cf2ed3c011d6dae8430b875"
+    },
+    {
+      "path": "profiles/personal/settings.json",
+      "bytes": 1718,
+      "words": 124,
+      "sha256": "4c227e59a1f6bafc8cd19c4de789220590f10a4dbc3095e1c908b6ef29c785d4"
+    },
+    {
+      "path": "profiles/phoxia/AGENTS.md",
+      "bytes": 725,
+      "words": 100,
+      "sha256": "d9ae76eeb964d93af49d83936c9cd51b48a274ecabf166a05fc74c4d084b7af2"
+    },
+    {
+      "path": "profiles/phoxia/CLAUDE.md",
+      "bytes": 725,
+      "words": 100,
+      "sha256": "d9ae76eeb964d93af49d83936c9cd51b48a274ecabf166a05fc74c4d084b7af2"
+    },
+    {
+      "path": "profiles/phoxia/profile.json",
+      "bytes": 1064,
+      "words": 77,
+      "sha256": "ffc9d77f7831b014666e4d66633b25087f9eeed987275462818700d35a9cf82c"
+    },
+    {
+      "path": "profiles/phoxia/settings.json",
+      "bytes": 1718,
+      "words": 124,
+      "sha256": "1af61774f4e059bed23be5129f4d8a124d10be7bb528a1b27ef91019e6e4e62a"
+    },
+    {
+      "path": "profiles/specialist/AGENTS.md",
+      "bytes": 800,
+      "words": 106,
+      "sha256": "520466adb1f3478425ed9a6706f4f7c9d2b4ee6e0a90bcbd9ef8313b7e895568"
+    },
+    {
+      "path": "profiles/specialist/CLAUDE.md",
+      "bytes": 800,
+      "words": 106,
+      "sha256": "520466adb1f3478425ed9a6706f4f7c9d2b4ee6e0a90bcbd9ef8313b7e895568"
+    },
+    {
+      "path": "profiles/specialist/profile.json",
+      "bytes": 1131,
+      "words": 79,
+      "sha256": "acac48b29fdfaa0c58ac2b6f2abd79092d0d92ef5eec5b6455d9db736393032e"
+    },
+    {
+      "path": "profiles/specialist/settings.json",
+      "bytes": 1719,
+      "words": 124,
+      "sha256": "f27f5df9394c81dc673387fc3e59f239c2d396406555d56e5cdd3fe8f288813a"
+    },
+    {
+      "path": "profiles/work/AGENTS.md",
+      "bytes": 377,
+      "words": 55,
+      "sha256": "daf57cf8290757050dc7bb3d95e5704e511b2ed66dd951e543ba99e290c38350"
+    },
+    {
+      "path": "profiles/work/CLAUDE.md",
+      "bytes": 377,
+      "words": 55,
+      "sha256": "daf57cf8290757050dc7bb3d95e5704e511b2ed66dd951e543ba99e290c38350"
+    },
+    {
+      "path": "profiles/work/profile.json",
+      "bytes": 929,
+      "words": 69,
+      "sha256": "9248f457976a79d2676ae3e432354dece4e08b4325e5b6c9d8c7f0b80d42508b"
+    },
+    {
+      "path": "profiles/work/settings.json",
+      "bytes": 1719,
+      "words": 124,
+      "sha256": "f27f5df9394c81dc673387fc3e59f239c2d396406555d56e5cdd3fe8f288813a"
+    },
+    {
+      "path": "restore-linux-macos.sh",
+      "bytes": 150,
+      "words": 15,
+      "sha256": "5627019ec20fc05477c75440a94c19ef4adbe8c8c3e0bb0b63c8d1760fa761f5"
+    },
+    {
+      "path": "restore-windows.ps1",
+      "bytes": 316,
+      "words": 34,
+      "sha256": "74f56e24f9bd5f565c5c730be861c80d9f9d08aeab22804b45b8801eacf3355a"
+    },
+    {
+      "path": "site/package-lock.json",
+      "bytes": 58610,
+      "words": 3155,
+      "sha256": "7dd4515be18f11a8ca395222d79e11cc6b7567a8b74bfbfb83fd5aabae3901c9"
+    },
+    {
+      "path": "site/package.json",
+      "bytes": 1050,
+      "words": 81,
+      "sha256": "f0a32cd508678ddcbedb68679a2ae2f1ad441377ecd8966a2e70d81fcd3ffacd"
+    },
+    {
+      "path": "site/playwright.config.ts",
+      "bytes": 882,
+      "words": 103,
+      "sha256": "5c91637dd29e2a4e2695b063a532856b86cf0e4f147c135ecaa91afb2aa3f268"
+    },
+    {
+      "path": "site/scripts/validate-locales.mjs",
+      "bytes": 748,
+      "words": 65,
+      "sha256": "1edbd23ff8d4e6f346e499cbaf9bd8277dd3803cc740c675351a3eb79a5051a1"
+    },
+    {
+      "path": "site/scripts/validate-public-boundary.mjs",
+      "bytes": 972,
+      "words": 113,
+      "sha256": "f1f55c44d7b0015f7a434985032cd3fb7f2980ed332143b9c896326b7b501f7d"
+    },
+    {
+      "path": "site/src/app.css",
+      "bytes": 12943,
+      "words": 1587,
+      "sha256": "de73189c0c4d9004789cb056d798c3e52909272ea87a5eed43645232332cde21"
+    },
+    {
+      "path": "site/src/app.html",
+      "bytes": 1082,
+      "words": 78,
+      "sha256": "74a5867a89a01de92cda5b79932d5625f1bfe99ae5f83eb7de7a7431442770bc"
+    },
+    {
+      "path": "site/src/lib/components/CopyCommand.svelte",
+      "bytes": 895,
+      "words": 99,
+      "sha256": "35c678ee9cd4730bb1ebf627bedefeef9b68a1e05b1c162e3044a53fedc574d7"
+    },
+    {
+      "path": "site/src/lib/components/EvidenceThread.svelte",
+      "bytes": 923,
+      "words": 64,
+      "sha256": "9c7c21ff1905bfa18a2dc209ac19d9ad602b7f356580d405c57797fb3c07c724"
+    },
+    {
+      "path": "site/src/lib/components/Footer.svelte",
+      "bytes": 872,
+      "words": 53,
+      "sha256": "8260758aa49754f11f5f2fc0c3b9281335f1df43fa7ed8ed61b94ba635415653"
+    },
+    {
+      "path": "site/src/lib/components/Header.svelte",
+      "bytes": 1907,
+      "words": 113,
+      "sha256": "e10ccda890c01f0e5ad97f91c783b70b63d9b93afe9a03b929d0bbb773cb2d8d"
+    },
+    {
+      "path": "site/src/lib/content/landing.test.ts",
+      "bytes": 1695,
+      "words": 137,
+      "sha256": "b151a20ede52ba8ad4f00d97764ffc7b2f0b0a2771df60940e350142e8d26b99"
+    },
+    {
+      "path": "site/src/lib/content/landing.ts",
+      "bytes": 1073,
+      "words": 97,
+      "sha256": "b621616bb90d02f1082287188cd6219685f1897b4743b538bb757013fba33324"
+    },
+    {
+      "path": "site/src/lib/i18n/content.ts",
+      "bytes": 3580,
+      "words": 425,
+      "sha256": "dedc44cc30cd8b139601b9e887b08f6cc85cd5e19cbe19af50f3bfe0524f6016"
+    },
+    {
+      "path": "site/src/lib/i18n/landing.ts",
+      "bytes": 10275,
+      "words": 1137,
+      "sha256": "d314ba8ecc8a57e9ecb0ded583251210b1350bf618fcd74b98df1864249396bf"
+    },
+    {
+      "path": "site/src/lib/i18n/locales.ts",
+      "bytes": 460,
+      "words": 54,
+      "sha256": "dfc00992bb4fd32667919da2e01530d4eb22b209f415604bb5bf9c0c78a20987"
+    },
+    {
+      "path": "site/src/lib/i18n/resolve.test.ts",
+      "bytes": 851,
+      "words": 81,
+      "sha256": "1feb1d5ce6e8115e14c971158e17e685102aa7119c236569f5b85a579c8e8841"
+    },
+    {
+      "path": "site/src/lib/i18n/resolve.ts",
+      "bytes": 676,
+      "words": 85,
+      "sha256": "cad00751ae08ba00345acce415fc1ca6c833560e156783f3719c8f28c864964f"
+    },
+    {
+      "path": "site/src/lib/i18n/store.svelte.ts",
+      "bytes": 1127,
+      "words": 132,
+      "sha256": "9741dd22b69dd66501ef519bbea8d3ed292ee38f3ac63b372266b9527be80799"
+    },
+    {
+      "path": "site/src/lib/i18n/validate.test.ts",
+      "bytes": 649,
+      "words": 87,
+      "sha256": "387b76c02aab3a47d24b6df5de025182a2206091f10873fa078ab6c98b158b6d"
+    },
+    {
+      "path": "site/src/lib/i18n/validate.ts",
+      "bytes": 1452,
+      "words": 165,
+      "sha256": "5dbd892bd6fe074251877888e634c89b30099c2f6210814922a7b831ecffca6f"
+    },
+    {
+      "path": "site/src/lib/theme.svelte.ts",
+      "bytes": 1422,
+      "words": 187,
+      "sha256": "ccfc1d6bef734fd986337ab1ce0b57630496c085ee9ab8cf645e0d70373e1abe"
+    },
+    {
+      "path": "site/src/routes/+layout.svelte",
+      "bytes": 888,
+      "words": 78,
+      "sha256": "780acd5987b6a31483ae72ded4e77eb9100b8ccaf893631dab0c2bd2e62a82d5"
+    },
+    {
+      "path": "site/src/routes/+layout.ts",
+      "bytes": 31,
+      "words": 5,
+      "sha256": "30eec0a0e67c08341a51c51fa019afb5f4815eec5a183501f2e39d5da1c4e67d"
+    },
+    {
+      "path": "site/src/routes/+page.svelte",
+      "bytes": 5573,
+      "words": 275,
+      "sha256": "1e0063e6d138437cab435df8e4cbe6acc7dc703a1d2e0566c4457f7a589ec811"
+    },
+    {
+      "path": "site/src/routes/changelog/+page.svelte",
+      "bytes": 304,
+      "words": 23,
+      "sha256": "b1fa7bdcba085d0fd6576334331524d549919a35c75513c89e7c0b41b4f4b064"
+    },
+    {
+      "path": "site/src/routes/changelog/+page.ts",
+      "bytes": 123,
+      "words": 13,
+      "sha256": "2fc88cfe16d0e850f9fd2ed1723830fd466b52f6c085bf06e320bb26d82742cb"
+    },
+    {
+      "path": "site/src/routes/docs/+page.svelte",
+      "bytes": 303,
+      "words": 23,
+      "sha256": "f27db16369f00c1aeef31ad2095b52bfdec5c611d1a4df3097b2a6ae15e4976f"
+    },
+    {
+      "path": "site/src/routes/docs/+page.ts",
+      "bytes": 118,
+      "words": 13,
+      "sha256": "164b16acb262c0d0c670a958d41023dcac106e32138a82583b2081f49f24d921"
+    },
+    {
+      "path": "site/src/routes/quick-start/+page.svelte",
+      "bytes": 307,
+      "words": 24,
+      "sha256": "d5e231a5a1e3b1a8c1f3a9e48495c199865f8b8c3c78567294b008b613ade8c1"
+    },
+    {
+      "path": "site/src/routes/quick-start/+page.ts",
+      "bytes": 129,
+      "words": 13,
+      "sha256": "c337daa5731ec0275a75b2cb2d8f0b06240e54d0c417176355799089b4777ecd"
+    },
+    {
+      "path": "site/src/routes/quickstart/+page.svelte",
+      "bytes": 65,
+      "words": 4,
+      "sha256": "1b7cbd42e73b5f5825289a4116afd894054a30ce046c063cdf9ba44c3b755d4a"
+    },
+    {
+      "path": "site/src/routes/quickstart/+page.ts",
+      "bytes": 129,
+      "words": 13,
+      "sha256": "c337daa5731ec0275a75b2cb2d8f0b06240e54d0c417176355799089b4777ecd"
+    },
+    {
+      "path": "site/svelte.config.js",
+      "bytes": 226,
+      "words": 28,
+      "sha256": "544ea10891ca0e350c2f1e040c93bfb3b0d6277d0e6c170381315ca8ad8d69ac"
+    },
+    {
+      "path": "site/tests/e2e/foundation.spec.ts",
+      "bytes": 710,
+      "words": 71,
+      "sha256": "64906e441d91e43da6f31d352e2776c5fecf2cef7f98ad64a0c9034cd2f5c4f9"
+    },
+    {
+      "path": "site/tests/e2e/landing.spec.ts",
+      "bytes": 4424,
+      "words": 390,
+      "sha256": "8da811765a1aafffb32124450b2007eee2128d42c47973de9f5334c8f3879827"
+    },
+    {
+      "path": "site/tests/redirects.spec.ts",
+      "bytes": 1225,
+      "words": 120,
+      "sha256": "5b0a6e3f7aaa5ddc925d3a4fdac28ff3cb341accc38b0871061498eb31d61cc5"
+    },
+    {
+      "path": "site/tsconfig.json",
+      "bytes": 354,
+      "words": 27,
+      "sha256": "135cf13ecadb56aac293bb51b42007117eebcc40da6836a0cd31cbe392db7ad3"
+    },
+    {
+      "path": "site/vercel.json",
+      "bytes": 437,
+      "words": 37,
+      "sha256": "7143b4104dec69ee883d8a71d8e13e569a025f115c69305ad9187bb26e3e75f3"
+    },
+    {
+      "path": "site/vite.config.ts",
+      "bytes": 143,
+      "words": 18,
+      "sha256": "f4b4540d12ade130e001856bdfcd9a0b7b9d5dbf8a4c27fd49802cf12d125487"
+    },
+    {
+      "path": "templates/generic/.gitignore.additions",
+      "bytes": 98,
+      "words": 6,
+      "sha256": "2f75dac80101b2c65cd33948204683336934d5944ebf75faed0ece24bbd14c8c"
+    },
+    {
+      "path": "templates/generic/AGENTS.md",
+      "bytes": 476,
+      "words": 63,
+      "sha256": "914cb2232ce3e31f46700aaf2186cf1a7ccd8961808a713710cf37e874326559"
+    },
+    {
+      "path": "templates/generic/CLAUDE.md",
+      "bytes": 476,
+      "words": 63,
+      "sha256": "914cb2232ce3e31f46700aaf2186cf1a7ccd8961808a713710cf37e874326559"
+    },
+    {
+      "path": "templates/generic/PROJECT.md",
+      "bytes": 310,
+      "words": 51,
+      "sha256": "2fc5232297012d27867b4c01037e413feae6cbba94616ecc0a87ee68df4b55ad"
+    },
+    {
+      "path": "templates/generic/PROJECT.yaml",
+      "bytes": 473,
+      "words": 47,
+      "sha256": "0a906a007b7f42b88e10a66f7acd1621c33d756132a9410bddd1f6f66b9090a7"
+    },
+    {
+      "path": "templates/generic/RELEASE.yaml",
+      "bytes": 229,
+      "words": 19,
+      "sha256": "a9d0240980e6c1411831d6b73a9a0231f44e2c342ea6616fbd65e20bb8eabbdd"
+    },
+    {
+      "path": "templates/generic/docs/DATA.md",
+      "bytes": 326,
+      "words": 46,
+      "sha256": "07f6743e53fb4058378937e4ac866e1188d6b75322a5c4b621054c619183b123"
+    },
+    {
+      "path": "templates/generic/docs/LEGAL.md",
+      "bytes": 244,
+      "words": 39,
+      "sha256": "bc9a1a0ad46874fffcd954adbed46c307f02add4566ae3ee10c41d1484e94527"
+    },
+    {
+      "path": "templates/generic/docs/OPERATIONS.md",
+      "bytes": 168,
+      "words": 30,
+      "sha256": "81fdbaec17fa486c1b0e0e4a38db9da4ab99930e91f2c8975438069d3a86f0cc"
+    },
+    {
+      "path": "templates/generic/docs/SYSTEM.md",
+      "bytes": 213,
+      "words": 30,
+      "sha256": "aef6bbf607c6c18b68e1c5ea5fee1319062b7790a73e451cc34739a2addc5ef9"
+    },
+    {
+      "path": "templates/generic/docs/UX.md",
+      "bytes": 134,
+      "words": 20,
+      "sha256": "12461df3cc2d69285cf0bd14343fc29b0655dd2ec8a986ffe635592a811ab34a"
+    },
+    {
+      "path": "templates/generic/docs/records/ADR-0000-template.md",
+      "bytes": 168,
+      "words": 27,
+      "sha256": "7b302df6ca72aff179dd8cacd04989b92fff2152fbc3d6d1fa68fa6bd4354c0a"
+    },
+    {
+      "path": "templates/generic/docs/records/FEAT-0000-template.md",
+      "bytes": 522,
+      "words": 85,
+      "sha256": "304d3a8652fd4363779a079287535a685bdb29903c8fb3b4e2f3db3d96453109"
+    },
+    {
+      "path": "templates/phoxia/.gitignore.additions",
+      "bytes": 98,
+      "words": 6,
+      "sha256": "2f75dac80101b2c65cd33948204683336934d5944ebf75faed0ece24bbd14c8c"
+    },
+    {
+      "path": "templates/phoxia/AGENTS.md",
+      "bytes": 671,
+      "words": 88,
+      "sha256": "9f06e671ffc309865c1d0415d40ec4416fb05d28a534cbb7d87551101cb88baa"
+    },
+    {
+      "path": "templates/phoxia/CLAUDE.local.example.md",
+      "bytes": 218,
+      "words": 31,
+      "sha256": "637e1e887933e9228006cc76c69b237960dfbe8544b38e5729a4311a1b1d2103"
+    },
+    {
+      "path": "templates/phoxia/CLAUDE.md",
+      "bytes": 416,
+      "words": 61,
+      "sha256": "f897659a9a7e859a7467dd76b466ff5a445d2bcb18860a9cf2939f79c84da2d3"
+    },
+    {
+      "path": "templates/phoxia/PROJECT.md",
+      "bytes": 338,
+      "words": 55,
+      "sha256": "84a72dd9a1fc4c7372d29ed82002a827f37a05a1773e8e7a2a6ff6fa38e0c1e7"
+    },
+    {
+      "path": "templates/phoxia/phoxia.project.yaml",
+      "bytes": 631,
+      "words": 63,
+      "sha256": "a07c0b0504b3286b8450329aee41d662749aa7eec2a1fc7fb34c146e3741b289"
+    },
+    {
+      "path": "templates/specialist/AGENTS.md",
+      "bytes": 800,
+      "words": 106,
+      "sha256": "520466adb1f3478425ed9a6706f4f7c9d2b4ee6e0a90bcbd9ef8313b7e895568"
+    },
+    {
+      "path": "templates/specialist/CLAUDE.md",
+      "bytes": 334,
+      "words": 41,
+      "sha256": "8aaff1ca0b290caa1e81130a33f659887fedf92cee595522dd6e201730e2f836"
+    },
+    {
+      "path": "templates/specialist/PROJECT.md",
+      "bytes": 480,
+      "words": 65,
+      "sha256": "7757c1ec707c78aebdf602a6103dd8c3c11fc2f87fae2b71a667399e58e36705"
+    },
+    {
+      "path": "tests/fixtures/navigator_scenarios.json",
+      "bytes": 1658,
+      "words": 45,
+      "sha256": "9a306fc6f46cc4d140f36d5a6fc7b6c6495c2a33edff57707ec8c52528874c43"
+    },
+    {
+      "path": "tests/test_devkit_skill_contract.py",
+      "bytes": 5830,
+      "words": 422,
+      "sha256": "b8bf22831b549b3f1a7c1bb67f76ea9ce1404b15b2b88a4f9acdb54fd56df99c"
+    },
+    {
+      "path": "tests/test_navigator_scenarios.py",
+      "bytes": 1721,
+      "words": 130,
+      "sha256": "39da03d530b14ca9477780442ecbee4e5b60f060900a39c68833e7793fd1f6a3"
+    },
+    {
+      "path": "tests/test_npm_launcher.mjs",
+      "bytes": 808,
+      "words": 103,
+      "sha256": "a8f06b38c603fb3a7a32c7b2003b03472ee9d95e68f37b6220c223ea2783c94b"
+    },
+    {
+      "path": "tests/test_package_manifest.py",
+      "bytes": 1784,
+      "words": 108,
+      "sha256": "7ab820896472b169cc3ef3d695121c5c490531e74078255f8c3b060e0bb31ac3"
+    },
+    {
+      "path": "tests/test_project_init_transaction.py",
+      "bytes": 4444,
+      "words": 285,
+      "sha256": "d515d267ad65edf45222231f51311f29b3a5bbc84af1fa6037573382d1af6119"
+    },
+    {
+      "path": "tests/test_validate.py",
+      "bytes": 2412,
+      "words": 178,
+      "sha256": "900fb6438c3f715c35940502a66b08d088fa8b070c269dedc675f7d2b70f6d2b"
+    },
+    {
+      "path": "tools/fetch-license.ps1",
+      "bytes": 179,
+      "words": 17,
+      "sha256": "a25b0f1d5054c0014ce249317a553bcc3e969318eaea1345c9391c2193952daa"
+    },
+    {
+      "path": "tools/fetch-license.sh",
+      "bytes": 206,
+      "words": 23,
+      "sha256": "c5fe13ceb6c4971b6077c83c7b8dcb4edc265fe0be7da84aac52040b2379ac0a"
+    },
+    {
+      "path": "tools/package_manifest.py",
+      "bytes": 3123,
+      "words": 252,
+      "sha256": "c8c19a1afa859f179578ddf30b1d5f6250dd527ad5b22b2bfcadfa046fb5539c"
+    },
+    {
+      "path": "tools/phoxia_devkit.py",
+      "bytes": 68116,
+      "words": 5889,
+      "sha256": "af9381c284555604bbf0c7b05fd116bbb74b2831fd3fe9f75b625895210fdaaf"
+    },
+    {
+      "path": "tools/project_state.py",
+      "bytes": 1721,
+      "words": 150,
+      "sha256": "a8da4185e6f34353f1dd180b7fc02e40d30312b7ebf0e5e3d7f5233cfb375b67"
+    },
+    {
+      "path": "tools/release_plan.py",
+      "bytes": 1907,
+      "words": 192,
+      "sha256": "37ef212d7cd7b79f538af6d3cac86b8693b074bf778e8a7abc48c120b3dc80c6"
+    },
+    {
+      "path": "tools/rfc_manager.py",
+      "bytes": 2685,
+      "words": 223,
+      "sha256": "4e4f1a0c179197c56cc1106a940b6ea73abae744afa5ddcf564644deaaf038bf"
+    },
+    {
+      "path": "tools/validate.py",
+      "bytes": 2208,
+      "words": 202,
+      "sha256": "362d9472e0a6f4c65cc1125b1fc85b2e7b4ba0a93d759e513bdf953f8ee0bcac"
+    },
+    {
+      "path": "tools/visual_contract.py",
+      "bytes": 804,
+      "words": 62,
+      "sha256": "e7cca649fb18d84221e10c23a3c72d6d85200eeb71f0b1a7f80f567faab348b3"
+    }
+  ]
+}
