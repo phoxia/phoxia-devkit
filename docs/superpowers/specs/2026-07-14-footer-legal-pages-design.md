@@ -33,7 +33,13 @@ Content is adapted to the Kit. It must not copy unverified infrastructure, reten
 
 ## Legal status
 
-The new policy and terms are drafts pending human legal review. The repository's `legalReviewRequired: true` setting remains authoritative. Implementation and tests prove publication behavior, not legal approval.
+The policy and terms are published as effective documents at the user's direction. Each page shows only its last-updated date, without draft, version, or pending-review labels.
+
+## Legal-page alignment and contacts
+
+On wide screens, the legal-page header uses the same two-column grid as the page body. Its first column remains empty so the icon, title, and updated date align exactly with the first content section. On narrow screens, the header and content use the same natural left edge.
+
+Contact details in the final section appear after the explanatory sentence, with one contact per line. Privacy, security, legal, and support addresses are not compressed into a single paragraph line.
 
 ## Accessibility and behavior
 
@@ -51,5 +57,6 @@ Automated coverage verifies:
 - mobile footer centering without horizontal overflow;
 - Support, Privacy, Terms, Security, Code of Conduct, Discord, and GitHub destinations;
 - AGPLv3 is absent from Trust & support and present in the bottom legal line;
-- both legal routes render in English and Brazilian Portuguese;
+- both legal routes render effective English and Brazilian Portuguese copy without draft labels;
+- legal titles align with the content column and contacts render one per line;
 - site type checks, locale validation, public-boundary validation, production build, and responsive Playwright tests pass.
