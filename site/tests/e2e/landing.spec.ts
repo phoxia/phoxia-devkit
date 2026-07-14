@@ -60,7 +60,7 @@ test("renders eight complete localized sections", async ({ page }) => {
   await expect(page.getByText("THE PROBLEM")).toHaveCount(0);
   await expect(page.getByText("Configure este repositório?")).toBeVisible();
   await expect(page.getByRole("button", { name: "Copiar comando de configuração" })).toBeVisible();
-  await expect(page.locator('[data-section="pipeline"] .thread')).toHaveAttribute("aria-label", "Fio de evidências do contexto do projeto ao resultado verificado");
+  await expect(page.locator('[data-section="pipeline"] .pipeline')).toHaveAttribute("aria-label", "Fio de evidências do contexto do projeto ao resultado verificado");
 });
 
 test("navigation anchors target real sections", async ({ page }) => {
@@ -115,6 +115,17 @@ test("uses compact preference controls and product-focused footer copy", async (
   await expect(page.locator('[data-section="problem"] .section-heading-row .lux-side')).toHaveCount(1);
   await expect(page.locator("footer")).toContainText("Project context");
   await expect(page.locator("footer")).not.toContainText("Lux");
+});
+
+test("uses distinct product components instead of a repeated card grid", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator(".problem-card > .icon-tile")).toHaveCount(4);
+  await expect(page.locator(".pipeline-node")).toHaveCount(3);
+  await expect(page.locator(".file-card")).toHaveCount(3);
+  await expect(page.locator(".impact-card")).toHaveCount(5);
+  await expect(page.locator(".mode-card")).toHaveCount(3);
+  await expect(page.locator(".trust-fact")).toHaveCount(3);
+  await expect(page.locator(".profile-strip")).toHaveCount(1);
 });
 
 test("uses offline fonts and 44px interactive targets", async ({ page }) => {
