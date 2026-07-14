@@ -29,9 +29,9 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1795,
-      "words": 246,
-      "sha256": "76b354504b807272c70b8b462ac808277ecda6b44f818c0ff433f35782421b5d"
+      "bytes": 1918,
+      "words": 266,
+      "sha256": "81c8ac959a969a534399192e3cc4a0e636c2b200c2ae6d095b9c1e661b8e920f"
     },
     {
       "path": "CLA.md",
@@ -839,9 +839,9 @@
     },
     {
       "path": "site/src/app.css",
-      "bytes": 23069,
-      "words": 2637,
-      "sha256": "a871d54bd9dac469e546c4ba1784fc175ec5cb8dae943935f85dddbd9ec476cc"
+      "bytes": 23833,
+      "words": 2716,
+      "sha256": "f4bf6618af0d4f32095ca8791c009e2b94b8f179d15e2dd8fc7d1454dd600309"
     },
     {
       "path": "site/src/app.html",
@@ -863,9 +863,9 @@
     },
     {
       "path": "site/src/lib/components/Footer.svelte",
-      "bytes": 1218,
-      "words": 58,
-      "sha256": "a10089c7f85d43219375fce59b3d2efe010d90f995b088cbe9e15b9ae899426e"
+      "bytes": 2021,
+      "words": 94,
+      "sha256": "1cf4e8926a97afc83f682489767eda490a5d87034cefa06a3c993e5f71457f09"
     },
     {
       "path": "site/src/lib/components/Header.svelte",
@@ -893,9 +893,9 @@
     },
     {
       "path": "site/src/lib/i18n/landing.ts",
-      "bytes": 9533,
-      "words": 1037,
-      "sha256": "ec78a8cd3434cf2934ec3386bb1d774b848cd5f2063f5a62a51aa5d11d8b069b"
+      "bytes": 9909,
+      "words": 1070,
+      "sha256": "0825d8a02e38f54f9d858c0973ea4e99a8b91ed3b164992a1cac83a8a6ebec4e"
     },
     {
       "path": "site/src/lib/i18n/locales.ts",
@@ -953,9 +953,9 @@
     },
     {
       "path": "site/src/routes/+page.svelte",
-      "bytes": 7731,
-      "words": 400,
-      "sha256": "52c4fe423878b9cfb08a656ae6d02b1058c30e80b280b7e64c925567bfef7ebc"
+      "bytes": 7703,
+      "words": 397,
+      "sha256": "42ec165e2019640556ec39f14c63320f10c6dcaa0b9be6c8f7e9419976b80764"
     },
     {
       "path": "site/src/routes/changelog/+page.svelte",
@@ -1019,9 +1019,9 @@
     },
     {
       "path": "site/tests/e2e/landing.spec.ts",
-      "bytes": 11682,
-      "words": 949,
-      "sha256": "bcdb6898bd0482426136ddeb7e0e6fd017382522663108c1dd14147e3be4ef52"
+      "bytes": 12929,
+      "words": 1039,
+      "sha256": "40c247743371553094c2cc43644e9b38139869adf9dcfbf99bdcb6bfe4eefcc8"
     },
     {
       "path": "site/tests/redirects.spec.ts",

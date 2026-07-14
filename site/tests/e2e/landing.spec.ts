@@ -179,6 +179,14 @@ test("renders the rich local footer sitemap", async ({ page }) => {
   await expect(page.locator("footer")).not.toContainText("Lux");
 });
 
+test("lays out the rich footer without mobile overflow", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator(".footer-main")).toHaveCSS("display", "grid");
+  await expect(page.locator(".footer-nav")).toHaveCSS("display", "grid");
+  await expect(page.locator(".footer-bottom")).toHaveCSS("border-top-style", "solid");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
+});
+
 test("shows profile paths without speculative community publishing", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".profile-panel")).toHaveCount(2);
