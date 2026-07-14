@@ -1,4 +1,4 @@
-# Phoxia DevKit 1.0.0
+# Phoxia DevKit 1.0.1
 
 A multi-profile development and software-governance kit for **Claude Code and Codex**.
 

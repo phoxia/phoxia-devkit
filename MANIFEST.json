@@ -1,6 +1,6 @@
 {
   "package": "@phoxia/devkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "fileCount": 212,
   "files": [
     {
@@ -29,9 +29,9 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 464,
-      "words": 63,
-      "sha256": "7282b8632cf8b41bf7464a74cb40633dff8264acf90fe9cff64d58d59ba00a4d"
+      "bytes": 750,
+      "words": 102,
+      "sha256": "4a30c282c8358e200f3a98e00bbfa66f884abd7e27adc1a527adebb4d9467b5c"
     },
     {
       "path": "CLA.md",
@@ -73,7 +73,7 @@
       "path": "README.md",
       "bytes": 2031,
       "words": 236,
-      "sha256": "ed618c04863bc399f76e41ee7d554836d75050e5a462dc09369ad5c8f14e46ed"
+      "sha256": "266760917ce735bc912cb374acb100e7dbf12406dae708c01c0439d9cb1c15c7"
     },
     {
       "path": "README.pt-BR.md",
@@ -241,7 +241,7 @@
       "path": "package.json",
       "bytes": 702,
       "words": 55,
-      "sha256": "f29bb801fe3b4ba679930d1a0f44f43fcd5726fd7144fdbe55903de69c313dcd"
+      "sha256": "0f8902cdbcdb775a584ee8f9962f709e3c3e3f517391f76928b058094290d7d1"
     },
     {
       "path": "plugins/core/.claude-plugin/plugin.json",
