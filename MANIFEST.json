@@ -1,6 +1,6 @@
 {
   "package": "@phoxia/devkit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "fileCount": 217,
   "files": [
     {
@@ -241,7 +241,7 @@
       "path": "package.json",
       "bytes": 702,
       "words": 55,
-      "sha256": "0f8902cdbcdb775a584ee8f9962f709e3c3e3f517391f76928b058094290d7d1"
+      "sha256": "25c9eb1417e5838e5081bedd6d7db5a8e200f25637418ed90ff70ba61616134e"
     },
     {
       "path": "plugins/core/.claude-plugin/plugin.json",
