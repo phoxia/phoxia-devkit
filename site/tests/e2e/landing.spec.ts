@@ -136,6 +136,17 @@ test("uses distinct product components instead of a repeated card grid", async (
   await expect(page.locator(".profile-panels")).toHaveCount(1);
 });
 
+test("uses semantic icons across technical card groups", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator(".pipeline-node > .icon-tile")).toHaveCount(3);
+  await expect(page.locator(".file-title > svg")).toHaveCount(3);
+  await expect(page.locator(".verification-title > .icon-tile")).toHaveCount(1);
+  await expect(page.locator(".impact-title > .icon-tile")).toHaveCount(5);
+  await expect(page.locator(".mode-card > .mode-icon")).toHaveCount(3);
+  await expect(page.locator(".profile-title > .icon-tile")).toHaveCount(2);
+  await expect(page.locator(".mode-card > span:not(.mode-icon)")).toHaveCount(0);
+});
+
 test("shows profile paths without speculative community publishing", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".profile-panel")).toHaveCount(2);

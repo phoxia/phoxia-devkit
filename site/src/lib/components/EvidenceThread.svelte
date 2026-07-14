@@ -6,8 +6,8 @@
 <div class="evidence section" aria-labelledby="evidence-title">
   <div class="section-heading"><p class="eyebrow">{eyebrow}</p><h2 id="evidence-title">{title}</h2></div>
   <div class="pipeline" aria-label={ariaLabel}>
-    <article class="pipeline-node"><FileCode2 aria-hidden="true" /><b>{nodes[0][0]}</b><code>{nodes[0][1]}</code></article><ChevronRight class="pipeline-arrow" aria-hidden="true" />
-    <article class="pipeline-node"><Terminal aria-hidden="true" /><b>{nodes[1][0]}</b><span>{nodes[1][1]}</span></article><ChevronRight class="pipeline-arrow" aria-hidden="true" />
-    <article class="pipeline-node"><Check aria-hidden="true" /><b>{nodes[2][0]}</b><span>{nodes[2][1]}</span></article><img src={luxConfident} alt="" />
+    <article class="pipeline-node"><span class="icon-tile"><FileCode2 aria-hidden="true" /></span><b>{nodes[0][0]}</b><code>{nodes[0][1]}</code></article><ChevronRight class="pipeline-arrow" aria-hidden="true" />
+    <article class="pipeline-node"><span class="icon-tile"><Terminal aria-hidden="true" /></span><b>{nodes[1][0]}</b><span>{nodes[1][1]}</span></article><ChevronRight class="pipeline-arrow" aria-hidden="true" />
+    <article class="pipeline-node"><span class="icon-tile"><Check aria-hidden="true" /></span><b>{nodes[2][0]}</b><span>{nodes[2][1]}</span></article><img src={luxConfident} alt="" />
   </div>
 </div>
