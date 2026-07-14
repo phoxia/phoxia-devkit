@@ -29,9 +29,9 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2226,
-      "words": 307,
-      "sha256": "a2b772c0ffafb32c8ef6a3bbebccd022ec11216de5601005e05867db74b92e56"
+      "bytes": 2214,
+      "words": 305,
+      "sha256": "175f836f63dcae63b773b206242b5bcac284ab1daebd3e300868a050b45bff44"
     },
     {
       "path": "CLA.md",
@@ -875,9 +875,9 @@
     },
     {
       "path": "site/src/lib/components/LegalPage.svelte",
-      "bytes": 2777,
-      "words": 307,
-      "sha256": "145d057f41cfdc839e5454042361d86da2eb3084e27238b8fc0baa44841e676e"
+      "bytes": 2931,
+      "words": 327,
+      "sha256": "a60206d06fc8292937ee1f95b185b390e8a51d9b7234bab31876d711dabecafa"
     },
     {
       "path": "site/src/lib/content/landing.test.ts",
@@ -905,9 +905,9 @@
     },
     {
       "path": "site/src/lib/i18n/legal.ts",
-      "bytes": 9798,
-      "words": 1327,
-      "sha256": "177889220fb564f55d947b3ae0ef5538925a29913f7cd716b2b9b87d7dbaca97"
+      "bytes": 9536,
+      "words": 1279,
+      "sha256": "6dff04e9b1e63660c2f57bc946a5e940bcc4d9d862b7872588992c37a6e04557"
     },
     {
       "path": "site/src/lib/i18n/locales.ts",
@@ -1049,9 +1049,9 @@
     },
     {
       "path": "site/tests/e2e/legal.spec.ts",
-      "bytes": 1771,
-      "words": 135,
-      "sha256": "97ee3c8fa3af7972db7a9e71455b78809f0879fcc3525a39d5d0f660b021b79b"
+      "bytes": 2788,
+      "words": 200,
+      "sha256": "deb9c87c2ea64d6a9fd4f7987823c5359e047cb64ad029d68aa56f904bf8f4af"
     },
     {
       "path": "site/tests/redirects.spec.ts",

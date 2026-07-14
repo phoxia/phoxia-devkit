@@ -11,8 +11,10 @@
 <Header />
 <main id="content" class="legal-page">
   <header class="legal-header">
-    <Icon size={22} aria-hidden="true" />
-    <div><h1>{copy.title}</h1><p>{copy.updated}</p><strong>{copy.status}</strong></div>
+    <div class="legal-heading">
+      <Icon size={22} aria-hidden="true" />
+      <div><h1>{copy.title}</h1><p>{copy.updated}</p></div>
+    </div>
   </header>
   <div class="legal-layout">
     <nav class="legal-toc" aria-label={copy.contents}>
@@ -35,11 +37,11 @@
 
 <style>
   .legal-page { max-width: 1120px; min-height: 70vh; margin: auto; padding: 64px 24px 96px; }
-  .legal-header { max-width: 760px; margin: 0 auto 40px; display: flex; align-items: flex-start; gap: 14px; }
-  .legal-header :global(svg) { flex: none; margin-top: 5px; color: var(--amber); }
-  .legal-header h1 { margin: 0; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; }
-  .legal-header p { margin: 10px 0 4px; color: var(--muted); font: 11px "JetBrains Mono", monospace; }
-  .legal-header strong { color: var(--amber); font: 600 10px "JetBrains Mono", monospace; text-transform: uppercase; letter-spacing: .08em; }
+  .legal-header { display: grid; grid-template-columns: 240px minmax(0, 760px); justify-content: center; gap: 48px; margin: 0 auto 40px; }
+  .legal-heading { position: relative; grid-column: 2; }
+  .legal-heading :global(svg) { position: absolute; top: 5px; right: calc(100% + 14px); color: var(--amber); }
+  .legal-heading h1 { margin: 0; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; }
+  .legal-heading p { margin: 10px 0 0; color: var(--muted); font: 11px "JetBrains Mono", monospace; }
   .legal-layout { display: grid; grid-template-columns: 240px minmax(0, 760px); justify-content: center; gap: 48px; }
   .legal-toc { position: sticky; top: 24px; align-self: start; display: flex; flex-direction: column; gap: 8px; }
   .legal-toc b { margin-bottom: 4px; font: 600 10px "JetBrains Mono", monospace; text-transform: uppercase; letter-spacing: .08em; }
@@ -49,5 +51,11 @@
   .legal-section:last-child { margin-bottom: 0; }
   .legal-section h2 { margin: 0 0 14px; font-size: 19px; }
   .legal-section p { margin: 0; color: var(--muted); white-space: pre-line; }
-  @media (max-width: 800px) { .legal-layout { grid-template-columns: 1fr; gap: 32px; } .legal-toc { position: static; } }
+  @media (max-width: 800px) {
+    .legal-header { grid-template-columns: 1fr; gap: 0; }
+    .legal-heading { grid-column: 1; }
+    .legal-heading :global(svg) { left: auto; right: 0; }
+    .legal-layout { grid-template-columns: 1fr; gap: 32px; }
+    .legal-toc { position: static; }
+  }
 </style>
