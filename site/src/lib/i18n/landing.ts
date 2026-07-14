@@ -60,8 +60,8 @@ export const landingTranslations = {
     impact: [
       ["Create", ".phoxia/project.yaml"],
       ["Update", "AGENTS.md · CLAUDE.md"],
-      ["Preserve", "your source code"],
-      ["Remove", "nothing, by default"],
+      ["Preserve", "Your source code"],
+      ["Remove", "Nothing, by default"],
       ["Backup", ".phoxia/backups/"],
     ],
     modes: "SETUP MODES",
@@ -194,8 +194,8 @@ export const landingTranslations = {
     impact: [
       ["Criar", ".phoxia/project.yaml"],
       ["Atualizar", "AGENTS.md · CLAUDE.md"],
-      ["Preservar", "seu código-fonte"],
-      ["Remover", "nada, por padrão"],
+      ["Preservar", "Seu código-fonte"],
+      ["Remover", "Nada, por padrão"],
       ["Backup", ".phoxia/backups/"],
     ],
     modes: "MODOS DE CONFIGURAÇÃO",

@@ -18,12 +18,12 @@ The footer remains a local `Footer.svelte` implementation. It is not configurabl
 
 The main footer uses four columns on wide screens:
 
-1. Brand: Phoxia DevKit name, concise product description and `AGPL-3.0-only · Phoxia` metadata.
+1. Brand: Phoxia DevKit name and concise product description without duplicated legal metadata.
 2. Product: Documentation, Quick start and Changelog.
 3. Project: GitHub, Contributing and Governance.
 4. Trust & support: Security, Support, Code of Conduct and AGPLv3.
 
-A separated bottom bar contains `© 2026 Phoxia`, the license identifier and an external GitHub link.
+A separated bottom bar contains `© 2026 Phoxia · AGPLv3 · phoxia.org` on the left and external Discord and GitHub links, in that order, on the right.
 
 ## Visual contract
 

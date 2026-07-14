@@ -12,6 +12,8 @@
 - Color-coded workflow progress from amber to violet and kept every landing section visible before scrolling.
 - Added semantic icons and consistent title spacing across pipeline, repository, verification, setup-mode and profile cards.
 - Replaced the compact footer with a rich local sitemap and removed the special highlight from the recommended setup mode.
+- Kept timeline node backgrounds opaque throughout animation and normalized repository-impact capitalization.
+- Simplified footer legal metadata and added Discord beside GitHub.
 
 ## 1.0.1 - 2026-07-14
 

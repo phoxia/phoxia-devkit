@@ -71,7 +71,7 @@ In `Footer.svelte`, import `phoxiaGlyph` from `@phoxia/lux/assets/brand/phoxia-g
         <a href="/" class="footer-logo" aria-label={landing.brandHome}>
           <img src={phoxiaGlyph} alt="" /><b>Phoxia DevKit</b>
         </a>
-        <p>{landing.footer}</p><small>AGPL-3.0-only · Phoxia</small>
+        <p>{landing.footer}</p>
       </div>
       <nav class="footer-nav" aria-label={landing.footerNavigation}>
         <div class="footer-group"><b>{landing.product}</b><a href="/docs">{copy.docs}</a><a href="/quick-start">{landing.quickStart}</a><a href="/changelog">{copy.changelog}</a></div>
@@ -79,7 +79,7 @@ In `Footer.svelte`, import `phoxiaGlyph` from `@phoxia/lux/assets/brand/phoxia-g
         <div class="footer-group"><b>{landing.trustSupport}</b><a href="https://github.com/phoxia/phoxia-devkit/blob/main/SECURITY.md">{landing.security}</a><a href="https://github.com/phoxia/phoxia-devkit/issues">{landing.support}</a><a href="https://github.com/phoxia/phoxia-devkit/blob/main/CODE_OF_CONDUCT.md">{landing.codeOfConduct}</a><a href="https://github.com/phoxia/phoxia-devkit/blob/main/LICENSE">AGPLv3</a></div>
       </nav>
     </div>
-    <div class="footer-bottom"><span>© {new Date().getFullYear()} Phoxia · AGPL-3.0-only</span><a href="https://github.com/phoxia/phoxia-devkit"><Github size={14} aria-hidden="true" /> GitHub</a></div>
+    <div class="footer-bottom"><span>© {new Date().getFullYear()} Phoxia · AGPLv3 · phoxia.org</span><div class="footer-external"><a href="https://discord.gg/HD2p367Zb5">Discord</a><a href="https://github.com/phoxia/phoxia-devkit"><Github size={14} aria-hidden="true" /> GitHub</a></div></div>
   </div>
 </footer>
 ```

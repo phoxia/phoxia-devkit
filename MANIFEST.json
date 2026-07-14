@@ -29,9 +29,9 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1918,
-      "words": 266,
-      "sha256": "81c8ac959a969a534399192e3cc4a0e636c2b200c2ae6d095b9c1e661b8e920f"
+      "bytes": 2096,
+      "words": 288,
+      "sha256": "e2d2e346c6bb753d8d708046badaae3a70dba2d54443f45c035f3d9b32caa232"
     },
     {
       "path": "CLA.md",
@@ -839,9 +839,9 @@
     },
     {
       "path": "site/src/app.css",
-      "bytes": 23833,
-      "words": 2716,
-      "sha256": "f4bf6618af0d4f32095ca8791c009e2b94b8f179d15e2dd8fc7d1454dd600309"
+      "bytes": 23706,
+      "words": 2701,
+      "sha256": "a6222dc6a3097e50865504f4d7106f5df892e484458213e5fbee6eeda879ef7a"
     },
     {
       "path": "site/src/app.html",
@@ -863,9 +863,9 @@
     },
     {
       "path": "site/src/lib/components/Footer.svelte",
-      "bytes": 2021,
-      "words": 94,
-      "sha256": "1cf4e8926a97afc83f682489767eda490a5d87034cefa06a3c993e5f71457f09"
+      "bytes": 3459,
+      "words": 252,
+      "sha256": "039763679778cd60ceaf95b425fa7db2d5995680489b1082537e16d28a0045cb"
     },
     {
       "path": "site/src/lib/components/Header.svelte",
@@ -895,7 +895,7 @@
       "path": "site/src/lib/i18n/landing.ts",
       "bytes": 9909,
       "words": 1070,
-      "sha256": "0825d8a02e38f54f9d858c0973ea4e99a8b91ed3b164992a1cac83a8a6ebec4e"
+      "sha256": "6c13f582479a92f88d99ead785e483f17ce425125fca783f53d12d336a18b41b"
     },
     {
       "path": "site/src/lib/i18n/locales.ts",
@@ -1019,9 +1019,9 @@
     },
     {
       "path": "site/tests/e2e/landing.spec.ts",
-      "bytes": 12929,
-      "words": 1039,
-      "sha256": "40c247743371553094c2cc43644e9b38139869adf9dcfbf99bdcb6bfe4eefcc8"
+      "bytes": 13877,
+      "words": 1115,
+      "sha256": "6366724b2b767eb252d956d8fc6491973207c958fb73158c86e07437aa3f502f"
     },
     {
       "path": "site/tests/redirects.spec.ts",

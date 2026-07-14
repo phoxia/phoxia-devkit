@@ -177,6 +177,10 @@ test("renders the rich local footer sitemap", async ({ page }) => {
   await expect(page.locator("footer .footer-bottom")).toHaveCount(1);
   await expect(page.locator("footer img")).toHaveCount(1);
   await expect(page.locator("footer")).not.toContainText("Lux");
+  await expect(page.locator("footer .footer-brand small")).toHaveCount(0);
+  await expect(page.locator("footer .footer-bottom")).toContainText(`© ${new Date().getFullYear()} Phoxia · AGPLv3 · phoxia.org`);
+  await expect(page.locator("footer .footer-external a")).toHaveCount(2);
+  expect((await page.locator("footer .footer-external a").allTextContents()).map((text) => text.trim())).toEqual(["Discord", "GitHub"]);
 });
 
 test("lays out the rich footer without mobile overflow", async ({ page }) => {
@@ -215,8 +219,10 @@ test("stops workflow motion when reduced motion is requested", async ({ page }) 
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/");
   await expect(page.locator(".timeline-progress")).toHaveCSS("animation-name", "none");
-  for (const step of await page.locator(".timeline-step").all())
+  for (const step of await page.locator(".timeline-step").all()) {
+    await expect(step).toHaveCSS("animation-name", "none");
     await expect(step).toHaveCSS("opacity", "1");
+  }
 });
 
 test("keeps all workflow stages visibly color coded without motion", async ({ page }) => {
@@ -228,6 +234,16 @@ test("keeps all workflow stages visibly color coded without motion", async ({ pa
   expect(new Set(colors).size).toBe(5);
   for (const node of await page.locator(".timeline-step > span").all())
     await expect(node).toHaveCSS("animation-name", "none");
+});
+
+test("keeps timeline node backgrounds opaque during motion", async ({ page }) => {
+  await page.goto("/");
+  for (const step of await page.locator(".timeline-step").all()) {
+    await expect(step).toHaveCSS("animation-name", "none");
+    await expect(step).toHaveCSS("opacity", "1");
+  }
+  await expect(page.getByText("Your source code", { exact: true })).toBeVisible();
+  await expect(page.getByText("Nothing, by default", { exact: true })).toBeVisible();
 });
 
 test("fills repository impact rows and avoids mobile overflow", async ({ page }, testInfo) => {

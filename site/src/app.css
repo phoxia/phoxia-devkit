@@ -522,9 +522,6 @@ nav a:hover {
   --step-color: var(--amber);
   position: relative;
   text-align: center;
-  opacity: 0.58;
-  animation: timeline-step-pulse 7s ease-in-out infinite;
-  animation-delay: calc(var(--step) * 1.05s);
 }
 .timeline-step:nth-child(2) { --step-color: #d3803f; }
 .timeline-step:nth-child(3) { --step-color: #b16372; }
@@ -555,10 +552,6 @@ nav a:hover {
 @keyframes timeline-travel {
   0%, 8% { transform: scaleX(0); }
   78%, 100% { transform: scaleX(1); }
-}
-@keyframes timeline-step-pulse {
-  0%, 12%, 100% { opacity: 0.58; }
-  18%, 42% { opacity: 1; }
 }
 @keyframes timeline-node-pulse {
   0%, 12%, 100% {
@@ -684,7 +677,6 @@ footer {
   color: var(--muted);
   font-size: 13px;
 }
-.footer-brand small,
 .footer-bottom {
   color: var(--muted);
   font: 10px "JetBrains Mono", monospace;
@@ -724,6 +716,14 @@ footer {
   margin-top: 42px;
   padding-top: 20px;
   border-top: 1px solid var(--border);
+}
+.footer-bottom a {
+  font: inherit;
+}
+.footer-external {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 @media (max-width: 900px) {
   .footer-main {
