@@ -137,6 +137,14 @@ test("shows profile paths without speculative community publishing", async ({ pa
   await expect(page.getByText("# coming soon")).toHaveCount(0);
 });
 
+test("presents verification as two readable terminal checks", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator(".verification-terminal")).toHaveCount(1);
+  await expect(page.locator(".verification-row")).toHaveCount(2);
+  await expect(page.locator(".verification-terminal")).toContainText("phxdk doctor");
+  await expect(page.locator(".verification-terminal")).toContainText("phxdk status");
+});
+
 test("renders an ordered animated workflow", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".workflow-timeline")).toHaveCount(1);

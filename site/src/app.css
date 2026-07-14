@@ -350,15 +350,47 @@ nav a:hover {
   gap: 12px;
   margin-top: 32px;
 }
-.problem-card {
-  min-height: 220px;
-  padding: 22px;
+.problem-card,
+.file-card,
+.impact-card,
+.mode-card,
+.profile-panel {
   border: 1px solid var(--border);
   border-radius: 14px;
   background: var(--surface);
+  box-shadow: 0 12px 30px -28px rgba(0, 0, 0, 0.55);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+.problem-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  padding: 22px;
+}
+.problem-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: linear-gradient(90deg, var(--amber), var(--violet));
+  opacity: 0.5;
+}
+.problem-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--amber) 12%, transparent), transparent 54%);
+  opacity: 0;
+  transition: opacity 180ms ease;
 }
 .problem-card .icon-tile {
   margin-bottom: 38px;
+  transition: transform 180ms ease;
 }
 .problem-card h3,
 .pipeline-node b,
@@ -840,9 +872,6 @@ footer {
 }
 .file-card {
   overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface);
 }
 .file-card > code {
   display: block;
@@ -861,15 +890,68 @@ footer {
     12px/1.7 "JetBrains Mono",
     monospace;
 }
-.verify {
+.verification-block {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 32px;
+  align-items: center;
   margin-top: 16px;
-  padding: 20px;
+  padding: 24px;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 14px;
   background: var(--surface);
 }
-.verify p {
+.verification-block h3 {
+  margin: 0 0 7px;
+}
+.verification-block p {
+  margin: 0;
   color: var(--muted);
+}
+.verification-terminal {
+  overflow: hidden;
+  border: 1px solid rgba(240, 238, 230, 0.14);
+  border-radius: 11px;
+  background: #0d0d14;
+  color: #f0eee6;
+  box-shadow: 0 18px 32px -24px rgba(0, 0, 0, 0.9);
+}
+.verification-bar {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 13px;
+  border-bottom: 1px solid rgba(240, 238, 230, 0.1);
+  background: #13131e;
+}
+.verification-bar i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #28c840;
+  box-shadow: 0 0 10px rgba(40, 200, 64, 0.65);
+}
+.verification-bar span {
+  color: #8a8780;
+  font: 10px "JetBrains Mono", monospace;
+}
+.verification-body {
+  padding: 13px;
+}
+.verification-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 7px;
+  color: #72d69c;
+}
+.verification-row + .verification-row {
+  border-top: 1px solid rgba(240, 238, 230, 0.08);
+}
+.verification-row code {
+  color: #f0eee6;
+  font: 12px "JetBrains Mono", monospace;
 }
 .subsection-heading {
   margin-top: 58px;
@@ -891,8 +973,6 @@ footer {
   gap: 8px;
   min-height: 106px;
   padding: 20px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
   background: color-mix(in srgb, var(--surface) 65%, transparent);
 }
 .impact-card:nth-child(n + 4) {
@@ -914,9 +994,6 @@ footer {
   position: relative;
   min-height: 190px;
   padding: 22px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--surface);
 }
 .mode-card > span {
   display: block;
@@ -955,9 +1032,6 @@ footer {
 }
 .profile-panel {
   padding: 24px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--surface);
 }
 .preset-grid,
 .workflow-grid {
@@ -981,6 +1055,23 @@ footer {
   color: var(--violet);
   font: 11px/1.5 "JetBrains Mono", monospace;
 }
+@media (hover: hover) and (pointer: fine) {
+  .problem-card:hover,
+  .file-card:hover,
+  .impact-card:hover,
+  .mode-card:hover,
+  .profile-panel:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--amber) 42%, var(--border));
+    box-shadow: 0 18px 38px -26px color-mix(in srgb, var(--amber) 35%, transparent);
+  }
+  .problem-card:hover::after {
+    opacity: 1;
+  }
+  .problem-card:hover .icon-tile {
+    transform: translateY(-2px) scale(1.04);
+  }
+}
 @media (max-width: 900px) {
   .problem-cards,
   .file-grid {
@@ -1002,6 +1093,10 @@ footer {
   .impact-card,
   .impact-card:nth-child(n + 4) {
     grid-column: auto;
+  }
+  .verification-block {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   .trust-fact {
     grid-template-columns: 44px 1fr;
