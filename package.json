@@ -17,6 +17,16 @@
   "engines": {
     "node": ">=20"
   },
+  "scripts": {
+    "manifest": "python3 tools/package_manifest.py . @phoxia/devkit $(node -p \"require('./package.json').version\")",
+    "version": "npm run manifest && git add MANIFEST.json SHA256SUMS.txt",
+    "bump:patch": "npm version patch",
+    "bump:minor": "npm version minor",
+    "bump:major": "npm version major",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  },
   "bin": {
     "phxdk": "bin/phoxia-devkit.mjs",
     "phoxia-devkit": "bin/phoxia-devkit.mjs"
