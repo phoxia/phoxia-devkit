@@ -687,7 +687,7 @@ footer {
   gap: 30px;
 }
 .footer-group {
-  gap: 10px;
+  gap: 8px;
 }
 .footer-group > b {
   margin-bottom: 3px;
@@ -707,6 +707,15 @@ footer {
 }
 .footer-inner a:hover {
   color: var(--text);
+}
+.footer-nav a {
+  min-height: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.footer-nav a:hover {
+  background: transparent;
 }
 .footer-bottom {
   display: flex;
@@ -879,12 +888,18 @@ footer {
   }
   .footer-nav {
     grid-template-columns: 1fr 1fr;
-    gap: 30px 24px;
+    gap: 30px 16px;
+  }
+  .footer-brand,
+  .footer-group {
+    align-items: center;
+    text-align: center;
   }
   .footer-bottom {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
+    text-align: center;
   }
   .copy-command {
     padding-left: 12px;

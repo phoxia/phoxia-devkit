@@ -18,7 +18,7 @@
       <nav class="footer-nav" aria-label={landing.footerNavigation}>
         <div class="footer-group"><b>{landing.product}</b><a href="/docs">{copy.docs}</a><a href="/quick-start">{landing.quickStart}</a><a href="/changelog">{copy.changelog}</a></div>
         <div class="footer-group"><b>{landing.project}</b><a href="https://github.com/phoxia/phoxia-devkit">GitHub</a><a href="https://github.com/phoxia/phoxia-devkit/blob/main/CONTRIBUTING.md">{landing.contributing}</a><a href="https://github.com/phoxia/phoxia-devkit/blob/main/GOVERNANCE.md">{landing.governance}</a></div>
-        <div class="footer-group"><b>{landing.trustSupport}</b><a href="https://github.com/phoxia/phoxia-devkit/blob/main/SECURITY.md">{landing.security}</a><a href="https://github.com/phoxia/phoxia-devkit/issues">{landing.support}</a><a href="https://github.com/phoxia/phoxia-devkit/blob/main/CODE_OF_CONDUCT.md">{landing.codeOfConduct}</a><a href="https://github.com/phoxia/phoxia-devkit/blob/main/LICENSE">AGPLv3</a></div>
+        <div class="footer-group"><b>{landing.trustSupport}</b><a href="https://github.com/phoxia/phoxia-devkit/blob/main/SECURITY.md">{landing.security}</a><a href="mailto:support@phoxia.org">{landing.support}</a><a href="/privacy">{landing.privacy}</a><a href="/terms">{landing.terms}</a><a href="https://github.com/phoxia/phoxia-devkit/blob/main/CODE_OF_CONDUCT.md">{landing.codeOfConduct}</a></div>
       </nav>
     </div>
     <div class="footer-bottom">

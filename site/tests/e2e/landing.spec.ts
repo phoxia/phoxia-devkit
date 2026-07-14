@@ -173,7 +173,21 @@ test("keeps setup modes visually equal", async ({ page }) => {
 test("renders the rich local footer sitemap", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("footer .footer-group")).toHaveCount(3);
-  await expect(page.locator("footer .footer-nav a")).toHaveCount(10);
+  await expect(page.locator("footer .footer-nav a")).toHaveCount(11);
+  await expect(page.locator("footer .footer-group").last().getByRole("link")).toHaveText([
+    "Security",
+    "Support",
+    "Privacy",
+    "Terms",
+    "Code of Conduct",
+  ]);
+  await expect(page.locator('footer a[href="mailto:support@phoxia.org"]')).toHaveCount(1);
+  await expect(page.locator('footer a[href="/privacy"]')).toHaveCount(1);
+  await expect(page.locator('footer a[href="/terms"]')).toHaveCount(1);
+  await expect(page.locator("footer .footer-group").last()).not.toContainText("AGPLv3");
+  await expect(page.locator("footer .footer-group").first()).toHaveCSS("gap", "8px");
+  await expect(page.locator("footer .footer-nav a").first()).toHaveCSS("min-height", "0px");
+  await expect(page.locator("footer .footer-nav a").first()).toHaveCSS("padding", "0px");
   await expect(page.locator("footer .footer-bottom")).toHaveCount(1);
   await expect(page.locator("footer img")).toHaveCount(1);
   await expect(page.locator("footer")).not.toContainText("Lux");
@@ -183,12 +197,17 @@ test("renders the rich local footer sitemap", async ({ page }) => {
   expect((await page.locator("footer .footer-external a").allTextContents()).map((text) => text.trim())).toEqual(["Discord", "GitHub"]);
 });
 
-test("lays out the rich footer without mobile overflow", async ({ page }) => {
+test("lays out the rich footer without mobile overflow", async ({ page }, testInfo) => {
   await page.goto("/");
   await expect(page.locator(".footer-main")).toHaveCSS("display", "grid");
   await expect(page.locator(".footer-nav")).toHaveCSS("display", "grid");
   await expect(page.locator(".footer-bottom")).toHaveCSS("border-top-style", "solid");
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
+  if (testInfo.project.name === "mobile-390") {
+    await expect(page.locator(".footer-brand")).toHaveCSS("align-items", "center");
+    await expect(page.locator(".footer-bottom")).toHaveCSS("align-items", "center");
+    await expect(page.locator(".footer-bottom")).toHaveCSS("text-align", "center");
+  }
 });
 
 test("shows profile paths without speculative community publishing", async ({ page }) => {
