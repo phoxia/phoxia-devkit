@@ -821,9 +821,9 @@
     },
     {
       "path": "site/playwright.config.ts",
-      "bytes": 882,
-      "words": 103,
-      "sha256": "5c91637dd29e2a4e2695b063a532856b86cf0e4f147c135ecaa91afb2aa3f268"
+      "bytes": 904,
+      "words": 105,
+      "sha256": "9e7ecafce143c4a45026c3e3b06cf27493722f5ca57423d5aefec026b9c10137"
     },
     {
       "path": "site/scripts/validate-locales.mjs",
