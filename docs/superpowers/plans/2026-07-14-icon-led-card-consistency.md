@@ -10,7 +10,8 @@
 
 ## Global Constraints
 
-- Add no dependency, generic card component, JavaScript behavior or new translated copy.
+- Add no dependency, generic card component or JavaScript behavior.
+- Replace `Choose a safe setup mode` / `Escolha um modo de configuração seguro` with descriptive headings in both locales.
 - Preserve the existing 3+2 impact grid, profile grids, themes, responsive behavior and reduced motion.
 - Icons are decorative and use `aria-hidden="true"`; visible text carries meaning.
 - Use `Phoxia • Page` title rules and no em dashes in product copy.
@@ -87,6 +88,7 @@ git commit -m "feat(site): add semantic card icons"
 
 **Files:**
 - Modify: `site/src/app.css`
+- Modify: `site/src/lib/i18n/landing.ts`
 - Modify: `CHANGELOG.md`
 - Regenerate: `MANIFEST.json`
 - Regenerate: `SHA256SUMS.txt`
@@ -117,6 +119,8 @@ git commit -m "feat(site): add semantic card icons"
 ```
 
 Remove the obsolete `.mode-card > span` number rule and preserve the existing card/hover foundation.
+
+Replace the mode heading with `Safe setup modes` and `Modos de configuração seguros`.
 
 - [ ] **Step 2: Verify responsive behavior**
 

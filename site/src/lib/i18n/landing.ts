@@ -65,7 +65,7 @@ export const landingTranslations = {
       ["Backup", ".phoxia/backups/"],
     ],
     modes: "SETUP MODES",
-    modesTitle: "Choose a safe setup mode",
+    modesTitle: "Safe setup modes",
     configurationTrust: "CONFIGURATION & TRUST",
     configurationTrustTitle: "Safe setup modes, executed locally on your terms.",
     modeCards: [
@@ -194,7 +194,7 @@ export const landingTranslations = {
       ["Backup", ".phoxia/backups/"],
     ],
     modes: "MODOS DE CONFIGURAÇÃO",
-    modesTitle: "Escolha um modo de configuração seguro",
+    modesTitle: "Modos de configuração seguros",
     configurationTrust: "CONFIGURAÇÃO E CONFIANÇA",
     configurationTrustTitle: "Modos seguros, executados localmente nos seus termos.",
     modeCards: [

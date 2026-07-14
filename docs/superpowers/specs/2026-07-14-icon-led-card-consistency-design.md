@@ -34,7 +34,7 @@ All icons are decorative and use `aria-hidden="true"`; visible text continues to
 
 ## Scope
 
-Use only `lucide-svelte`, existing markup and native CSS. Add no dependency, generic card component, JavaScript behavior or new translated copy.
+Use only `lucide-svelte`, existing markup and native CSS. Add no dependency, generic card component or JavaScript behavior. Replace the imperative setup-mode heading in both locales with a descriptive label.
 
 ## Verification
 

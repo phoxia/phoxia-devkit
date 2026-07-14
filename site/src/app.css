@@ -351,7 +351,9 @@ nav a:hover {
   margin-top: 32px;
 }
 .problem-card,
+.pipeline-node,
 .file-card,
+.verification-block,
 .impact-card,
 .mode-card,
 .profile-panel {
@@ -389,7 +391,7 @@ nav a:hover {
   transition: opacity 180ms ease;
 }
 .problem-card .icon-tile {
-  margin-bottom: 38px;
+  margin-bottom: 24px;
   transition: transform 180ms ease;
 }
 .problem-card h3,
@@ -437,7 +439,7 @@ nav a:hover {
 .pipeline-node svg {
   color: var(--amber);
 }
-.pipeline-node span,
+.pipeline-node > span:not(.icon-tile),
 .pipeline-node code {
   font: 11px "JetBrains Mono";
   color: var(--muted);
@@ -880,7 +882,9 @@ footer {
     color: var(--step-color);
   }
   .problem-card,
+  .pipeline-node,
   .file-card,
+  .verification-block,
   .impact-card,
   .mode-card,
   .profile-panel {
@@ -917,10 +921,12 @@ footer {
 .file-card {
   overflow: hidden;
 }
-.file-card > code {
-  display: block;
+.file-title {
   padding: 12px 16px;
   border-bottom: 1px solid var(--border);
+  color: var(--amber);
+}
+.file-title code {
   color: var(--violet);
   font: 600 12px "JetBrains Mono", monospace;
 }
@@ -946,11 +952,32 @@ footer {
   background: var(--surface);
 }
 .verification-block h3 {
-  margin: 0 0 7px;
+  margin: 0;
 }
 .verification-block p {
   margin: 0;
   color: var(--muted);
+}
+.file-title,
+.verification-title,
+.impact-title,
+.profile-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.verification-title,
+.profile-title {
+  margin-bottom: 10px;
+}
+.pipeline-node .icon-tile,
+.verification-title .icon-tile,
+.impact-title .icon-tile,
+.mode-icon,
+.profile-title .icon-tile {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
 }
 .verification-terminal {
   overflow: hidden;
@@ -1014,8 +1041,9 @@ footer {
 .impact-card {
   grid-column: span 2;
   display: grid;
-  gap: 8px;
-  min-height: 106px;
+  align-content: start;
+  gap: 14px;
+  min-height: 126px;
   padding: 20px;
   background: color-mix(in srgb, var(--surface) 65%, transparent);
 }
@@ -1024,6 +1052,10 @@ footer {
 }
 .impact b {
   color: var(--amber);
+}
+.impact-title b,
+.profile-title h3 {
+  margin: 0;
 }
 .impact code {
   overflow-wrap: anywhere;
@@ -1039,11 +1071,8 @@ footer {
   min-height: 190px;
   padding: 22px;
 }
-.mode-card > span {
-  display: block;
-  margin-bottom: 42px;
-  color: var(--amber);
-  font: 11px "JetBrains Mono", monospace;
+.mode-icon {
+  margin-bottom: 24px;
 }
 .mode-card.recommended {
   border-color: color-mix(in srgb, var(--amber) 52%, var(--border));
@@ -1101,7 +1130,9 @@ footer {
 }
 @media (hover: hover) and (pointer: fine) {
   .problem-card:hover,
+  .pipeline-node:hover,
   .file-card:hover,
+  .verification-block:hover,
   .impact-card:hover,
   .mode-card:hover,
   .profile-panel:hover {

@@ -147,6 +147,20 @@ test("uses semantic icons across technical card groups", async ({ page }) => {
   await expect(page.locator(".mode-card > span:not(.mode-icon)")).toHaveCount(0);
 });
 
+test("aligns technical card icons with their titles", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator(".problem-card .icon-tile").first()).toHaveCSS("margin-bottom", "24px");
+  await expect(page.locator(".file-title").first()).toHaveCSS("display", "flex");
+  await expect(page.locator(".pipeline-node .icon-tile").first()).toHaveCSS("width", "34px");
+  await expect(page.locator(".mode-icon").first()).toHaveCSS("margin-bottom", "24px");
+});
+
+test("describes setup modes without presenting an action", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("heading", { name: "Safe setup modes", exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Choose a safe setup mode", exact: true })).toHaveCount(0);
+});
+
 test("shows profile paths without speculative community publishing", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".profile-panel")).toHaveCount(2);
