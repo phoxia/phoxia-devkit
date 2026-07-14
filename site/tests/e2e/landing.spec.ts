@@ -63,6 +63,14 @@ test("renders eight complete localized sections", async ({ page }) => {
   await expect(page.locator('[data-section="pipeline"] .pipeline')).toHaveAttribute("aria-label", "Fio de evidências do contexto do projeto ao resultado verificado");
 });
 
+test("keeps every landing section visible before scrolling", async ({ page }) => {
+  await page.goto("/");
+  const opacities = await page.locator("main > section[data-section]").evaluateAll((sections) =>
+    sections.map((section) => getComputedStyle(section).opacity),
+  );
+  expect(opacities).toEqual(Array(8).fill("1"));
+});
+
 test("navigation anchors target real sections", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("#product")).toHaveCount(1);
@@ -158,6 +166,17 @@ test("stops workflow motion when reduced motion is requested", async ({ page }) 
   await expect(page.locator(".timeline-progress")).toHaveCSS("animation-name", "none");
   for (const step of await page.locator(".timeline-step").all())
     await expect(step).toHaveCSS("opacity", "1");
+});
+
+test("keeps all workflow stages visibly color coded without motion", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/");
+  const colors = await page.locator(".timeline-step > span").evaluateAll((items) =>
+    items.map((item) => getComputedStyle(item).borderColor),
+  );
+  expect(new Set(colors).size).toBe(5);
+  for (const node of await page.locator(".timeline-step > span").all())
+    await expect(node).toHaveCSS("animation-name", "none");
 });
 
 test("fills repository impact rows and avoids mobile overflow", async ({ page }, testInfo) => {

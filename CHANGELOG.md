@@ -8,6 +8,8 @@
 - Matched the compact Phoxia language and theme controls, integrated Lux into the problem heading and corrected the footer product message.
 - Consolidated the Kit landing into an eight-section product pipeline with distinct problem, file, impact, configuration and trust treatments.
 - Added an accessible responsive workflow timeline and reduced-motion fallback.
+- Focused the profiles section on official presets and local workflows, unified technical card interactions, and rebuilt verification as a readable terminal surface.
+- Color-coded workflow progress from amber to violet and kept every landing section visible before scrolling.
 
 ## 1.0.1 - 2026-07-14
 

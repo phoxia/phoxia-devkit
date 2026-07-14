@@ -475,6 +475,8 @@ nav a:hover {
   margin-top: 48px;
 }
 .workflow-timeline ol {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 12px;
@@ -488,6 +490,7 @@ nav a:hover {
   top: 14px;
   left: 10%;
   height: 2px;
+  z-index: 0;
 }
 .timeline-track {
   right: 10%;
@@ -514,12 +517,17 @@ nav a:hover {
   transform: translateY(-50%);
 }
 .timeline-step {
+  --step-color: var(--amber);
   position: relative;
   text-align: center;
   opacity: 0.58;
   animation: timeline-step-pulse 7s ease-in-out infinite;
   animation-delay: calc(var(--step) * 1.05s);
 }
+.timeline-step:nth-child(2) { --step-color: #d3803f; }
+.timeline-step:nth-child(3) { --step-color: #b16372; }
+.timeline-step:nth-child(4) { --step-color: #8f45a6; }
+.timeline-step:nth-child(5) { --step-color: var(--violet); }
 .timeline-step > span {
   position: relative;
   z-index: 2;
@@ -533,10 +541,14 @@ nav a:hover {
   background: var(--bg);
   font: 11px "JetBrains Mono", monospace;
   color: var(--muted);
+  animation: timeline-node-pulse 7s ease-in-out infinite;
+  animation-delay: calc(var(--step) * 1.05s);
 }
 .timeline-step h3 {
   margin: 0;
   font-size: 15px;
+  animation: timeline-title-pulse 7s ease-in-out infinite;
+  animation-delay: calc(var(--step) * 1.05s);
 }
 @keyframes timeline-travel {
   0%, 8% { transform: scaleX(0); }
@@ -545,6 +557,29 @@ nav a:hover {
 @keyframes timeline-step-pulse {
   0%, 12%, 100% { opacity: 0.58; }
   18%, 42% { opacity: 1; }
+}
+@keyframes timeline-node-pulse {
+  0%, 12%, 100% {
+    border-color: var(--border-strong);
+    background: var(--bg);
+    box-shadow: none;
+    color: var(--muted);
+  }
+  18%, 42% {
+    border-color: var(--step-color);
+    background: color-mix(in srgb, var(--step-color) 16%, var(--bg));
+    box-shadow:
+      0 0 0 4px color-mix(in srgb, var(--step-color) 12%, transparent),
+      0 0 20px color-mix(in srgb, var(--step-color) 48%, transparent);
+    color: var(--step-color);
+  }
+}
+@keyframes timeline-title-pulse {
+  0%, 12%, 100% { color: var(--text); }
+  18%, 42% {
+    color: var(--step-color);
+    text-shadow: 0 0 18px color-mix(in srgb, var(--step-color) 40%, transparent);
+  }
 }
 .commands {
   display: grid;
@@ -649,17 +684,6 @@ footer {
 .footer-brand small {
   color: var(--muted);
   font: 10px "JetBrains Mono", monospace;
-}
-@supports (animation-timeline: view()) {
-  main > .section:not(.hero) {
-    animation: section-reveal linear both;
-    animation-timeline: view();
-    animation-range: entry 0 entry 22%;
-  }
-  @keyframes section-reveal {
-    from { opacity: 0; transform: translateY(18px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
 }
 @media (max-width: 900px) {
   .site-header {
@@ -841,6 +865,26 @@ footer {
   .timeline-step {
     animation: none;
     opacity: 1;
+  }
+  .timeline-step > span,
+  .timeline-step h3 {
+    animation: none;
+  }
+  .timeline-step > span {
+    border-color: var(--step-color);
+    background: color-mix(in srgb, var(--step-color) 16%, var(--bg));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--step-color) 10%, transparent);
+    color: var(--step-color);
+  }
+  .timeline-step h3 {
+    color: var(--step-color);
+  }
+  .problem-card,
+  .file-card,
+  .impact-card,
+  .mode-card,
+  .profile-panel {
+    transition: none;
   }
 }
 @media (max-width: 600px) and (prefers-reduced-motion: reduce) {
