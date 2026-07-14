@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## 1.0.2 - 2026-07-14
+
+- Added npm scripts for version bump, manifest regeneration and release workflow.
 
 - Simplified the Kit navigation and replaced select menus with accessible locale and theme controls.
 - Added purposeful terminal and section motion with reduced-motion support.
