@@ -161,6 +161,24 @@ test("describes setup modes without presenting an action", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Choose a safe setup mode", exact: true })).toHaveCount(0);
 });
 
+test("keeps setup modes visually equal", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator(".mode-card.recommended")).toHaveCount(0);
+  const borders = await page.locator(".mode-card").evaluateAll((cards) =>
+    cards.map((card) => getComputedStyle(card).borderTopColor),
+  );
+  expect(new Set(borders).size).toBe(1);
+});
+
+test("renders the rich local footer sitemap", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator("footer .footer-group")).toHaveCount(3);
+  await expect(page.locator("footer .footer-nav a")).toHaveCount(10);
+  await expect(page.locator("footer .footer-bottom")).toHaveCount(1);
+  await expect(page.locator("footer img")).toHaveCount(1);
+  await expect(page.locator("footer")).not.toContainText("Lux");
+});
+
 test("shows profile paths without speculative community publishing", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".profile-panel")).toHaveCount(2);
