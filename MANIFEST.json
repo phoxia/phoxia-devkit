@@ -1,7 +1,7 @@
 {
   "package": "@phoxia/devkit",
   "version": "1.0.1",
-  "fileCount": 212,
+  "fileCount": 217,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/bug.yml",
@@ -29,9 +29,9 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2096,
-      "words": 288,
-      "sha256": "e2d2e346c6bb753d8d708046badaae3a70dba2d54443f45c035f3d9b32caa232"
+      "bytes": 2226,
+      "words": 307,
+      "sha256": "a2b772c0ffafb32c8ef6a3bbebccd022ec11216de5601005e05867db74b92e56"
     },
     {
       "path": "CLA.md",
@@ -827,9 +827,9 @@
     },
     {
       "path": "site/scripts/validate-locales.mjs",
-      "bytes": 748,
-      "words": 65,
-      "sha256": "1edbd23ff8d4e6f346e499cbaf9bd8277dd3803cc740c675351a3eb79a5051a1"
+      "bytes": 848,
+      "words": 72,
+      "sha256": "9df5c474cd448306d5cdb52a50a16baba8df393cdadcc90ee76d1cdcb389026e"
     },
     {
       "path": "site/scripts/validate-public-boundary.mjs",
@@ -839,9 +839,9 @@
     },
     {
       "path": "site/src/app.css",
-      "bytes": 23706,
-      "words": 2701,
-      "sha256": "a6222dc6a3097e50865504f4d7106f5df892e484458213e5fbee6eeda879ef7a"
+      "bytes": 24018,
+      "words": 2736,
+      "sha256": "2dca83de3e0b788b1c0b7da4a1e0949a72468ce91e97b0da7a5b899f301ac4ed"
     },
     {
       "path": "site/src/app.html",
@@ -863,15 +863,21 @@
     },
     {
       "path": "site/src/lib/components/Footer.svelte",
-      "bytes": 3459,
-      "words": 252,
-      "sha256": "039763679778cd60ceaf95b425fa7db2d5995680489b1082537e16d28a0045cb"
+      "bytes": 3436,
+      "words": 253,
+      "sha256": "4b81dab3396a477e2209e3422b7f4f0af00906337715c090a236001fb2100af0"
     },
     {
       "path": "site/src/lib/components/Header.svelte",
-      "bytes": 1959,
+      "bytes": 1961,
       "words": 174,
-      "sha256": "e4de1b466071bfe599d340f938344d133f0f19bedec0b2ecf4a2757467e0d233"
+      "sha256": "11aafc2a9c8d50b7bde2db337de7caa06115b2c93bed8182590ad349e871b898"
+    },
+    {
+      "path": "site/src/lib/components/LegalPage.svelte",
+      "bytes": 2777,
+      "words": 307,
+      "sha256": "145d057f41cfdc839e5454042361d86da2eb3084e27238b8fc0baa44841e676e"
     },
     {
       "path": "site/src/lib/content/landing.test.ts",
@@ -893,9 +899,15 @@
     },
     {
       "path": "site/src/lib/i18n/landing.ts",
-      "bytes": 9909,
-      "words": 1070,
-      "sha256": "6c13f582479a92f88d99ead785e483f17ce425125fca783f53d12d336a18b41b"
+      "bytes": 10002,
+      "words": 1078,
+      "sha256": "fc05522c282b229e68fb5ef04e085a8a9c6f0d70b83723ae23cb14da0c986b5d"
+    },
+    {
+      "path": "site/src/lib/i18n/legal.ts",
+      "bytes": 9798,
+      "words": 1327,
+      "sha256": "177889220fb564f55d947b3ae0ef5538925a29913f7cd716b2b9b87d7dbaca97"
     },
     {
       "path": "site/src/lib/i18n/locales.ts",
@@ -941,9 +953,9 @@
     },
     {
       "path": "site/src/routes/+layout.svelte",
-      "bytes": 888,
-      "words": 78,
-      "sha256": "780acd5987b6a31483ae72ded4e77eb9100b8ccaf893631dab0c2bd2e62a82d5"
+      "bytes": 944,
+      "words": 81,
+      "sha256": "1d39fb4792c6b6299d0eb7c8538efb12e4636ced1d391eb6e5e9230678f953ba"
     },
     {
       "path": "site/src/routes/+layout.ts",
@@ -982,6 +994,12 @@
       "sha256": "164b16acb262c0d0c670a958d41023dcac106e32138a82583b2081f49f24d921"
     },
     {
+      "path": "site/src/routes/privacy/+page.svelte",
+      "bytes": 526,
+      "words": 42,
+      "sha256": "3cbab0a30d58f6914106cd28d76a2394f02f3733e39899b798f5c18f4ac104da"
+    },
+    {
       "path": "site/src/routes/quick-start/+page.svelte",
       "bytes": 307,
       "words": 24,
@@ -1006,6 +1024,12 @@
       "sha256": "c337daa5731ec0275a75b2cb2d8f0b06240e54d0c417176355799089b4777ecd"
     },
     {
+      "path": "site/src/routes/terms/+page.svelte",
+      "bytes": 516,
+      "words": 43,
+      "sha256": "e2bf707ac80f77a20f55e716e436692f9c682f03710de41d087b5bd8f7a10464"
+    },
+    {
       "path": "site/svelte.config.js",
       "bytes": 226,
       "words": 28,
@@ -1019,9 +1043,15 @@
     },
     {
       "path": "site/tests/e2e/landing.spec.ts",
-      "bytes": 13877,
-      "words": 1115,
-      "sha256": "6366724b2b767eb252d956d8fc6491973207c958fb73158c86e07437aa3f502f"
+      "bytes": 15327,
+      "words": 1201,
+      "sha256": "3699b041c10df4fa8a785dde66e3f8007a63df028296f838b2a4c5f9400fddf5"
+    },
+    {
+      "path": "site/tests/e2e/legal.spec.ts",
+      "bytes": 1771,
+      "words": 135,
+      "sha256": "97ee3c8fa3af7972db7a9e71455b78809f0879fcc3525a39d5d0f660b021b79b"
     },
     {
       "path": "site/tests/redirects.spec.ts",

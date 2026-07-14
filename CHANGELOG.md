@@ -14,6 +14,7 @@
 - Replaced the compact footer with a rich local sitemap and removed the special highlight from the recommended setup mode.
 - Kept timeline node backgrounds opaque throughout animation and normalized repository-impact capitalization.
 - Simplified footer legal metadata and added Discord beside GitHub.
+- Compacted footer navigation, centered its mobile layout, and added bilingual Kit privacy and terms drafts pending legal review.
 
 ## 1.0.1 - 2026-07-14
 

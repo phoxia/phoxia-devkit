@@ -79,7 +79,8 @@ test("navigation anchors target real sections", async ({ page }) => {
   await expect(page.getByText("Start the guided setup")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "Install Phoxia DevKit" }).first()).toBeVisible();
   await expect(page.locator("footer").getByRole("link", { name: "Security" })).toBeVisible();
-  await expect(page.locator("footer").getByRole("link", { name: "AGPLv3" })).toBeVisible();
+  await expect(page.locator("footer").getByRole("link", { name: "Privacy" })).toBeVisible();
+  await expect(page.locator("footer").getByRole("link", { name: "Terms" })).toBeVisible();
 });
 
 test("blocked locale storage does not prevent theme initialization", async ({ page }) => {
