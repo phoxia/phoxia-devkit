@@ -125,7 +125,16 @@ test("uses distinct product components instead of a repeated card grid", async (
   await expect(page.locator(".impact-card")).toHaveCount(5);
   await expect(page.locator(".mode-card")).toHaveCount(3);
   await expect(page.locator(".trust-fact")).toHaveCount(3);
-  await expect(page.locator(".profile-strip")).toHaveCount(1);
+  await expect(page.locator(".profile-panels")).toHaveCount(1);
+});
+
+test("shows profile paths without speculative community publishing", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator(".profile-panel")).toHaveCount(2);
+  await expect(page.locator(".preset-cell")).toHaveCount(4);
+  await expect(page.locator(".workflow-cell")).toHaveCount(2);
+  await expect(page.getByText("Community publishing")).toHaveCount(0);
+  await expect(page.getByText("# coming soon")).toHaveCount(0);
 });
 
 test("renders an ordered animated workflow", async ({ page }) => {

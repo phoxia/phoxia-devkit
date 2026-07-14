@@ -47,11 +47,6 @@ export const landingTranslations = {
         "Use named workflows for common tasks.",
         "~/.agents/skills/phoxia-dev · /phoxia-core:devkit",
       ],
-      [
-        "Community publishing",
-        "Publishing public profiles is coming soon.",
-        "# coming soon",
-      ],
     ],
     files: "GENERATED FILES",
     filesTitle: "Plain files, committed to your repository. Nothing hidden.",
@@ -179,11 +174,6 @@ export const landingTranslations = {
         "Executar um fluxo",
         "Use fluxos nomeados para tarefas comuns.",
         "~/.agents/skills/phoxia-dev · /phoxia-core:devkit",
-      ],
-      [
-        "Publicação comunitária",
-        "A publicação de perfis públicos estará disponível em breve.",
-        "# em breve",
       ],
     ],
     files: "ARQUIVOS GERADOS",

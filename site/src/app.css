@@ -364,14 +364,14 @@ nav a:hover {
 .pipeline-node b,
 .mode-card h3,
 .trust-fact h3,
-.profile-strip h3 {
+.profile-panel h3 {
   margin: 0 0 7px;
   font-size: 16px;
 }
 .problem-card p,
 .mode-card p,
 .trust-fact p,
-.profile-strip p {
+.profile-panel p {
   margin: 0;
   color: var(--muted);
 }
@@ -947,39 +947,39 @@ footer {
   width: 40px;
   height: 40px;
 }
-.profile-strip {
+.profile-panels {
   display: grid;
-  grid-template-columns: 1fr 1fr minmax(190px, 0.62fr);
-  gap: 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
   margin-top: 32px;
-  overflow: hidden;
+}
+.profile-panel {
+  padding: 24px;
   border: 1px solid var(--border);
   border-radius: 14px;
   background: var(--surface);
 }
-.profile-strip article {
-  min-width: 0;
-  padding: 22px;
-  border-right: 1px solid var(--border);
+.preset-grid,
+.workflow-grid {
+  display: grid;
+  gap: 8px;
+  margin-top: 22px;
 }
-.profile-strip article:last-child {
-  border-right: 0;
+.preset-grid {
+  grid-template-columns: 1fr 1fr;
 }
-.profile-strip code {
-  display: block;
-  margin-top: 16px;
+.preset-cell,
+.workflow-cell {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface2);
   overflow-wrap: anywhere;
   color: var(--violet);
   font: 11px/1.5 "JetBrains Mono", monospace;
-}
-.profile-status span {
-  display: inline-block;
-  margin-bottom: 18px;
-  padding: 4px 7px;
-  border-radius: 999px;
-  background: var(--surface2);
-  color: var(--amber);
-  font: 10px "JetBrains Mono", monospace;
 }
 @media (max-width: 900px) {
   .problem-cards,
@@ -989,34 +989,19 @@ footer {
   .file-card:last-child {
     grid-column: 1 / -1;
   }
-  .profile-strip {
-    grid-template-columns: 1fr 1fr;
-  }
-  .profile-status {
-    grid-column: 1 / -1;
-    border-top: 1px solid var(--border);
-  }
 }
 @media (max-width: 600px) {
   .problem-cards,
   .file-grid,
   .mode-grid,
   .impact,
-  .profile-strip {
+  .profile-panels {
     grid-template-columns: 1fr;
   }
   .file-card:last-child,
   .impact-card,
-  .impact-card:nth-child(n + 4),
-  .profile-status {
+  .impact-card:nth-child(n + 4) {
     grid-column: auto;
-  }
-  .profile-strip article {
-    border-right: 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .profile-strip article:last-child {
-    border-bottom: 0;
   }
   .trust-fact {
     grid-template-columns: 44px 1fr;
