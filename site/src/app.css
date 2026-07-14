@@ -128,26 +128,40 @@ nav a:hover {
   gap: 7px;
   margin-left: auto;
 }
-.control select,
-.theme-toggle,
-.github {
-  height: 44px;
-  min-width: 44px;
+.segmented {
+  display: flex;
+  padding: 3px;
   border: 1px solid var(--border);
-  border-radius: 9px;
-  color: var(--muted);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.segmented button {
+  min-width: 44px;
+  height: 44px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 7px;
   background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: 600 11px "JetBrains Mono", monospace;
 }
-.control select {
-  padding: 0 8px;
-}
-.theme-toggle,
-.github {
+.segmented button:has(svg) {
   display: grid;
   place-items: center;
 }
-.theme-toggle {
-  cursor: pointer;
+.segmented button:hover {
+  color: var(--text);
+  background: var(--surface2);
+}
+.segmented button[aria-pressed="true"] {
+  color: var(--text);
+  background: var(--surface2);
+  box-shadow: 0 0 0 1px var(--border-strong);
+}
+.segmented button:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
 }
 .button {
   min-height: 44px;
@@ -233,13 +247,13 @@ nav a:hover {
 }
 .hero-demo {
   position: relative;
-  padding: 44px 0 0 35px;
+  padding-top: 44px;
 }
 .hero-demo > img {
   position: absolute;
   z-index: 2;
   top: -28px;
-  left: -8px;
+  right: 18px;
   width: 86px;
   filter: drop-shadow(0 8px 24px rgba(245, 158, 11, 0.28));
 }
@@ -284,19 +298,52 @@ nav a:hover {
   color: #6b6862;
   font: 10px "JetBrains Mono";
 }
-.terminal pre {
+.terminal-body {
   margin: 0;
   padding: 25px;
   font:
     12px/1.8 "JetBrains Mono",
     monospace;
-  white-space: pre-wrap;
 }
-.terminal pre span {
+.terminal-line {
+  min-height: 1.8em;
+  opacity: 0;
+  transform: translateY(5px);
+  animation: terminal-line-in 0.35s ease forwards;
+}
+.terminal-line:nth-child(2) { animation-delay: 0.55s; margin-top: 12px; }
+.terminal-line:nth-child(3) { animation-delay: 0.9s; color: #f0eee6; }
+.terminal-line:nth-child(4) { animation-delay: 1.25s; color: #8d8996; }
+.terminal-line:nth-child(5) { animation-delay: 1.6s; }
+.terminal-line:nth-child(6) { animation-delay: 1.9s; }
+.terminal-line:nth-child(7) { animation-delay: 2.2s; }
+.terminal-line span {
   color: var(--violet);
 }
-.terminal pre b {
+.terminal-line b {
   color: #f0eee6;
+}
+.terminal-line.success span,
+.terminal-line.ready span {
+  color: #72d69c;
+}
+.terminal-line.ready {
+  color: #f0eee6;
+}
+.terminal-line.ready i {
+  display: inline-block;
+  width: 7px;
+  height: 1.15em;
+  margin-left: 5px;
+  vertical-align: -0.18em;
+  background: var(--amber);
+  animation: cursor-blink 0.8s steps(1) infinite 2.5s;
+}
+@keyframes terminal-line-in {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes cursor-blink {
+  50% { opacity: 0; }
 }
 .section-heading {
   max-width: 640px;
@@ -539,12 +586,30 @@ footer {
   color: var(--muted);
   font-size: 13px;
 }
+.footer-brand small {
+  color: var(--muted);
+  font: 10px "JetBrains Mono", monospace;
+}
+@supports (animation-timeline: view()) {
+  main > .section:not(.hero) {
+    animation: section-reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0 entry 22%;
+  }
+  @keyframes section-reveal {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
 @media (max-width: 900px) {
   .site-header {
     gap: 12px;
   }
   .site-header nav {
     display: none;
+  }
+  .site-header {
+    grid-template-columns: auto 1fr;
   }
   .hero {
     grid-template-columns: 1fr;
@@ -607,12 +672,22 @@ footer {
   .text-link {
     justify-content: center;
   }
-  .hero-demo {
-    padding-left: 10px;
+  .hero-demo > img {
+    right: 12px;
   }
-  .terminal pre {
+  .terminal-body {
     padding: 20px 16px;
     font-size: 10.5px;
+  }
+  .header-actions {
+    gap: 4px;
+  }
+  .segmented {
+    padding: 2px;
+  }
+  .segmented button {
+    min-width: 40px;
+    padding-inline: 7px;
   }
   .thread {
     grid-template-columns: 1fr;
@@ -649,6 +724,19 @@ footer {
   }
   .install {
     padding-block: 80px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .terminal-line {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+  .terminal-line.ready i {
+    animation: none;
+  }
+  main > .section:not(.hero) {
+    animation: none;
   }
 }
 @media (prefers-reduced-motion: reduce) {

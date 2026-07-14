@@ -49,7 +49,7 @@ export const translations: Record<Locale, LocaleCopy> = {
     title: "Keep AI-assisted development grounded in your project.",
     subtitle:
       "Give Claude Code and Codex the context, instructions, and checks they need to make changes that belong in your codebase.",
-    getStarted: "Start the guided setup",
+    getStarted: "Install Phoxia DevKit",
     viewGitHub: "View on GitHub",
     fallback:
       "This content is not available in your language yet. Showing English.",
@@ -80,7 +80,7 @@ export const translations: Record<Locale, LocaleCopy> = {
       "Mantenha o desenvolvimento assistido por IA fundamentado no seu projeto.",
     subtitle:
       "Dê ao Claude Code e ao Codex o contexto, as instruções e as verificações necessárias para fazer mudanças que pertencem à sua base de código.",
-    getStarted: "Iniciar configuração guiada",
+    getStarted: "Instalar Phoxia DevKit",
     viewGitHub: "Ver no GitHub",
     fallback:
       "Este conteúdo ainda não está disponível no seu idioma. Exibindo em inglês.",

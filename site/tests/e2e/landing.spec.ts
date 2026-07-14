@@ -8,6 +8,8 @@ test("exposes the approved hierarchy", async ({ page }) => {
   );
   await expect(page.getByText("THE EVIDENCE THREAD")).toBeVisible();
   await expect(page.getByText("npx @phoxia/devkit init").first()).toBeVisible();
+  await expect(page.getByText("Reading project context")).toBeVisible();
+  await expect(page.getByText("Ready locally")).toBeVisible();
   await expect(
     page.getByRole("link", { name: "Skip to content" }),
   ).toBeAttached();
@@ -42,7 +44,7 @@ test("copies the setup command with an announced status", async ({
 test("renders twelve complete localized sections", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("main > section[data-section]")).toHaveCount(12);
-  await page.getByLabel("Language").selectOption("pt-BR");
+  await page.getByRole("button", { name: "Português (Brasil)" }).click();
   await expect(
     page.getByRole("heading", { name: "O que muda no meu repositório?" }),
   ).toBeVisible();
@@ -61,6 +63,11 @@ test("navigation anchors target real sections", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("#product")).toHaveCount(1);
   await expect(page.locator("#how")).toHaveCount(1);
+  await expect(page.locator("header").getByText("GitHub")).toHaveCount(0);
+  await expect(page.getByText("Start the guided setup")).toHaveCount(0);
+  await expect(page.getByRole("link", { name: "Install Phoxia DevKit" }).first()).toBeVisible();
+  await expect(page.locator("footer").getByRole("link", { name: "Security" })).toBeVisible();
+  await expect(page.locator("footer").getByRole("link", { name: "AGPLv3" })).toBeVisible();
 });
 
 test("blocked locale storage does not prevent theme initialization", async ({ page }) => {
@@ -69,19 +76,31 @@ test("blocked locale storage does not prevent theme initialization", async ({ pa
   await expect(page.locator("html")).toHaveAttribute("data-theme", /light|dark/);
 });
 
+test("reduced motion exposes the complete terminal immediately", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/");
+  const lines = page.locator(".terminal-line");
+  await expect(lines).toHaveCount(7);
+  for (const line of await lines.all()) {
+    await expect(line).toHaveCSS("animation-name", "none");
+    await expect(line).toHaveCSS("opacity", "1");
+  }
+});
+
 test("offers persistent System, Light and Dark themes and follows system changes", async ({
   page,
 }) => {
   await page.emulateMedia({ colorScheme: "light" });
   await page.goto("/");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
-  await page.getByLabel("Theme").selectOption("dark");
+  await page.getByRole("button", { name: "Dark theme" }).click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-  await page.getByLabel("Theme").selectOption("system");
+  await expect(page.getByRole("button", { name: "Dark theme" })).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: "System theme" }).click();
   await page.emulateMedia({ colorScheme: "dark" });
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await page.reload();
-  await expect(page.getByLabel("Theme")).toHaveValue("system");
+  await expect(page.getByRole("button", { name: "System theme" })).toHaveAttribute("aria-pressed", "true");
 });
 
 test("uses offline fonts and 44px interactive targets", async ({ page }) => {
@@ -93,8 +112,8 @@ test("uses offline fonts and 44px interactive targets", async ({ page }) => {
   await page.goto("/");
   expect(externalFonts).toEqual([]);
   for (const locator of [
-    page.getByLabel("Language"),
-    page.getByLabel("Theme"),
+    page.getByRole("button", { name: "English (US)" }),
+    page.getByRole("button", { name: "System theme" }),
     page.getByRole("button", { name: "Copy setup command" }),
   ]) {
     expect((await locator.boundingBox())?.height).toBeGreaterThanOrEqual(44);

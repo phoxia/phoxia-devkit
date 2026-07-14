@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Simplified the Kit navigation and replaced select menus with accessible locale and theme controls.
+- Added purposeful terminal and section motion with reduced-motion support.
+- Expanded the site footer with documentation, support, security and project resources.
+
 ## 1.0.1 - 2026-07-14
 
 - Added managed documentation triggers for public version, user-facing behavior and contract changes.
