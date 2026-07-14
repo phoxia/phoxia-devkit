@@ -32,3 +32,11 @@ Make the landing page more engaging while keeping motion purposeful, navigation 
 - `npm run build`
 - Existing Playwright coverage plus focused assertions for header controls and reduced-motion behavior.
 - Visual inspection at desktop, tablet and mobile widths.
+
+## Approved visual correction
+
+- Match the compact controls already used by `phoxia.org`: one language button cycles between Portuguese and English, and one theme button cycles between system, light and dark while showing the resulting mode icon.
+- Remove the segmented control containers and active-state pills. Preserve accessible names, titles, focus treatment and persisted preferences.
+- Move the confused Lux from above “The Problem” to the right of that section heading, aligned with the title instead of occupying its own row. Stack it naturally below the heading on narrow screens.
+- Keep Lux as supporting artwork only. Footer copy must describe the DevKit itself: shared project context, repeatable workflows and verifiable changes for Claude Code and Codex.
+- Do not change the remaining navigation, terminal sequence, page structure or footer links in this correction.
