@@ -14,7 +14,7 @@ for (const [path, title] of pages) {
 
 test("language preference stays on the canonical URL", async ({ page }) => {
   await page.goto("/");
-  await page.getByRole("button", { name: "Português (Brasil)" }).click();
+  await page.getByRole("button", { name: "Language: Português (Brasil)" }).click();
   await expect(page.locator("main h1")).toContainText("Mantenha");
   await expect(page).toHaveURL("http://127.0.0.1:4173/");
   await page.reload();

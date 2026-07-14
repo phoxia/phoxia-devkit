@@ -5,6 +5,7 @@
 - Simplified the Kit navigation and replaced select menus with accessible locale and theme controls.
 - Added purposeful terminal and section motion with reduced-motion support.
 - Expanded the site footer with documentation, support, security and project resources.
+- Matched the compact Phoxia language and theme controls, integrated Lux into the problem heading and corrected the footer product message.
 
 ## 1.0.1 - 2026-07-14
 

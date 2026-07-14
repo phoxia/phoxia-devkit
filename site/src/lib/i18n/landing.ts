@@ -127,7 +127,7 @@ export const landingTranslations = {
     terminalReadyLocal: "Ready locally",
     primary: "Primary",
     footer:
-      "Keep AI-assisted development grounded in your project. Lux is a friendly community pet and development companion.",
+      "Project context, repeatable workflows and verifiable changes for Claude Code and Codex.",
     community: "Community",
     resources: "Resources",
     project: "Project",
@@ -274,7 +274,7 @@ export const landingTranslations = {
     terminalReadyLocal: "Pronto localmente",
     primary: "Principal",
     footer:
-      "Mantenha o desenvolvimento assistido por IA fundamentado no seu projeto. Lux é o mascote da comunidade e companheiro de desenvolvimento.",
+      "Contexto do projeto, fluxos repetíveis e mudanças verificáveis para Claude Code e Codex.",
     community: "Comunidade",
     resources: "Recursos",
     project: "Projeto",

@@ -44,7 +44,7 @@ test("copies the setup command with an announced status", async ({
 test("renders twelve complete localized sections", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("main > section[data-section]")).toHaveCount(12);
-  await page.getByRole("button", { name: "Português (Brasil)" }).click();
+  await page.getByRole("button", { name: "Language: Português (Brasil)" }).click();
   await expect(
     page.getByRole("heading", { name: "O que muda no meu repositório?" }),
   ).toBeVisible();
@@ -87,20 +87,30 @@ test("reduced motion exposes the complete terminal immediately", async ({ page }
   }
 });
 
-test("offers persistent System, Light and Dark themes and follows system changes", async ({
+test("cycles persistent themes with one compact control", async ({
   page,
 }) => {
   await page.emulateMedia({ colorScheme: "light" });
   await page.goto("/");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
-  await page.getByRole("button", { name: "Dark theme" }).click();
+  const theme = page.getByRole("button", { name: "Theme: System" });
+  await expect(theme).toHaveCount(1);
+  await theme.click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-  await expect(page.getByRole("button", { name: "Dark theme" })).toHaveAttribute("aria-pressed", "true");
-  await page.getByRole("button", { name: "System theme" }).click();
-  await page.emulateMedia({ colorScheme: "dark" });
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.getByRole("button", { name: "Theme: Dark" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  await page.getByRole("button", { name: "Theme: Light" }).click();
   await page.reload();
-  await expect(page.getByRole("button", { name: "System theme" })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.getByRole("button", { name: "Theme: System" })).toHaveCount(1);
+});
+
+test("uses compact preference controls and product-focused footer copy", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator("header .header-actions button")).toHaveCount(2);
+  await expect(page.locator("header .segmented")).toHaveCount(0);
+  await expect(page.locator('[data-section="problem"] .section-heading-row .lux-side')).toHaveCount(1);
+  await expect(page.locator("footer")).toContainText("Project context");
+  await expect(page.locator("footer")).not.toContainText("Lux");
 });
 
 test("uses offline fonts and 44px interactive targets", async ({ page }) => {
@@ -112,8 +122,8 @@ test("uses offline fonts and 44px interactive targets", async ({ page }) => {
   await page.goto("/");
   expect(externalFonts).toEqual([]);
   for (const locator of [
-    page.getByRole("button", { name: "English (US)" }),
-    page.getByRole("button", { name: "System theme" }),
+    page.getByRole("button", { name: "Language: Português (Brasil)" }),
+    page.getByRole("button", { name: "Theme: System" }),
     page.getByRole("button", { name: "Copy setup command" }),
   ]) {
     expect((await locator.boundingBox())?.height).toBeGreaterThanOrEqual(44);
