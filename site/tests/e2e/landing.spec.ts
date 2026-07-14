@@ -6,7 +6,7 @@ test("exposes the approved hierarchy", async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
     "Keep AI-assisted development",
   );
-  await expect(page.getByText("THE EVIDENCE THREAD")).toBeVisible();
+  await expect(page.getByText("THE DEVKIT PIPELINE")).toBeVisible();
   await expect(page.getByText("npx @phoxia/devkit init").first()).toBeVisible();
   await expect(page.getByText("Reading project context")).toBeVisible();
   await expect(page.getByText("Ready locally")).toBeVisible();
@@ -41,9 +41,13 @@ test("copies the setup command with an announced status", async ({
   ).resolves.toBe("npx @phoxia/devkit init");
 });
 
-test("renders twelve complete localized sections", async ({ page }) => {
+test("renders eight complete localized sections", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator("main > section[data-section]")).toHaveCount(12);
+  await expect(page.locator("main > section[data-section]")).toHaveCount(8);
+  await expect(page.locator('[data-section="pipeline"]')).toHaveCount(1);
+  await expect(page.locator('[data-section="files-impact"]')).toHaveCount(1);
+  await expect(page.locator('[data-section="configuration-trust"]')).toHaveCount(1);
+  await expect(page.locator('[data-section="newcomer"]')).toHaveCount(0);
   await page.getByRole("button", { name: "Language: Português (Brasil)" }).click();
   await expect(
     page.getByRole("heading", { name: "O que muda no meu repositório?" }),
@@ -56,7 +60,7 @@ test("renders twelve complete localized sections", async ({ page }) => {
   await expect(page.getByText("THE PROBLEM")).toHaveCount(0);
   await expect(page.getByText("Configure este repositório?")).toBeVisible();
   await expect(page.getByRole("button", { name: "Copiar comando de configuração" })).toBeVisible();
-  await expect(page.locator('[data-section="evidence"] .thread')).toHaveAttribute("aria-label", "Fio de evidências do contexto do projeto ao resultado verificado");
+  await expect(page.locator('[data-section="pipeline"] .thread')).toHaveAttribute("aria-label", "Fio de evidências do contexto do projeto ao resultado verificado");
 });
 
 test("navigation anchors target real sections", async ({ page }) => {

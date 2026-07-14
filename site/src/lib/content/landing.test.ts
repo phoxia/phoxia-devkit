@@ -36,19 +36,15 @@ test("keeps verified commands, paths, workflows, and URLs immutable", () => {
   assert.equal(Object.isFrozen(landingContent), true);
 });
 
-test("keeps the approved twelve-section landing inventory", () => {
+test("keeps the approved eight-section landing inventory", () => {
   assert.deepEqual(landingContent.sections, [
     "hero",
-    "evidence",
     "problem",
-    "help",
+    "pipeline",
     "workflow",
+    "files-impact",
+    "configuration-trust",
     "profiles",
-    "generated-files",
-    "transparency",
-    "setup-modes",
-    "trust",
-    "newcomer",
     "install",
   ]);
 });

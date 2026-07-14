@@ -5,8 +5,8 @@ export const landingTranslations = {
       "For beginners and experienced developers alike. Works inside an existing repository, and you review every proposed change before it is applied.",
     start: "Install Phoxia DevKit",
     read: "Read the documentation",
-    evidence: "THE EVIDENCE THREAD",
-    evidenceTitle: "Every command stays tied to the reasons behind the change.",
+    pipeline: "THE DEVKIT PIPELINE",
+    pipelineTitle: "From project context to a change you can verify.",
     evidenceNodes: [
       ["Project context", ".phoxia/project.yaml"],
       ["Assistant action", "Reads instructions first"],
@@ -32,11 +32,6 @@ export const landingTranslations = {
         "Nothing confirms a change belongs before it lands.",
       ],
     ],
-    help: "HOW PHOXIA DEVKIT HELPS",
-    helpTitle:
-      "A shared source of truth both assistants read before they touch a file.",
-    helpText:
-      "Repository-specific context, project conventions, trusted workflows and proportional verification live alongside your code.",
     workflow: "THE WORKFLOW",
     workflowTitle: "Five steps, start to synchronized.",
     profiles: "PUBLIC PROFILES & WORKFLOWS",
@@ -60,6 +55,8 @@ export const landingTranslations = {
     ],
     files: "GENERATED FILES",
     filesTitle: "Plain files, committed to your repository. Nothing hidden.",
+    filesImpact: "FILES & REPOSITORY IMPACT",
+    filesImpactTitle: "Plain files and an explicit change set. Nothing hidden.",
     verify: "Readable verification output",
     verifyText:
       "Run phxdk doctor and phxdk status to inspect the setup.",
@@ -74,6 +71,8 @@ export const landingTranslations = {
     ],
     modes: "SETUP MODES",
     modesTitle: "Choose a safe setup mode",
+    configurationTrust: "CONFIGURATION & TRUST",
+    configurationTrustTitle: "Safe setup modes, executed locally on your terms.",
     modeCards: [
       [
         "Add · recommended",
@@ -103,18 +102,6 @@ export const landingTranslations = {
         "Who approves changes?",
         "You review affected files before applying them.",
       ],
-    ],
-    newcomer: "NEW TO PHOXIA DEVKIT?",
-    newcomerTitle: "The recommended path",
-    newcomerSteps: [
-      "Install Phoxia DevKit",
-      "Select Claude Code, Codex or both",
-      "Choose Add, Replace or Update",
-      "Choose an official preset",
-      "Review affected files",
-      "Apply locally",
-      "Run verification",
-      "Learn advanced configuration",
     ],
     install: "THE RECOMMENDED PATH",
     installTitle: "Set up your project in one command.",
@@ -149,8 +136,8 @@ export const landingTranslations = {
       "Para iniciantes e pessoas desenvolvedoras experientes. Funciona dentro de um repositório existente, e você revisa cada mudança proposta antes da aplicação.",
     start: "Instalar Phoxia DevKit",
     read: "Ler a documentação",
-    evidence: "FIO DE EVIDÊNCIAS",
-    evidenceTitle: "Cada comando permanece ligado aos motivos da mudança.",
+    pipeline: "O PIPELINE DO DEVKIT",
+    pipelineTitle: "Do contexto do projeto a uma mudança que você pode verificar.",
     evidenceNodes: [
       ["Contexto do projeto", ".phoxia/project.yaml"],
       ["Ação do assistente", "Lê as instruções primeiro"],
@@ -177,11 +164,6 @@ export const landingTranslations = {
         "Nada confirma que uma mudança pertence ao projeto antes de entrar.",
       ],
     ],
-    help: "COMO O PHOXIA DEVKIT AJUDA",
-    helpTitle:
-      "Uma fonte compartilhada de verdade que ambos os assistentes leem antes de alterar um arquivo.",
-    helpText:
-      "Contexto específico, convenções, fluxos confiáveis e verificação proporcional ficam junto do código.",
     workflow: "O FLUXO",
     workflowTitle: "Cinco etapas, do início à sincronização.",
     profiles: "PERFIS E FLUXOS PÚBLICOS",
@@ -207,6 +189,8 @@ export const landingTranslations = {
     files: "ARQUIVOS GERADOS",
     filesTitle:
       "Arquivos simples, versionados no seu repositório. Nada oculto.",
+    filesImpact: "ARQUIVOS E IMPACTO NO REPOSITÓRIO",
+    filesImpactTitle: "Arquivos simples e um conjunto explícito de mudanças. Nada oculto.",
     verify: "Saída de verificação legível",
     verifyText:
       "Execute phxdk doctor e phxdk status para inspecionar a configuração.",
@@ -221,6 +205,8 @@ export const landingTranslations = {
     ],
     modes: "MODOS DE CONFIGURAÇÃO",
     modesTitle: "Escolha um modo de configuração seguro",
+    configurationTrust: "CONFIGURAÇÃO E CONFIANÇA",
+    configurationTrustTitle: "Modos seguros, executados localmente nos seus termos.",
     modeCards: [
       [
         "Adicionar · recomendado",
@@ -250,18 +236,6 @@ export const landingTranslations = {
         "Quem aprova as mudanças?",
         "Você revisa os arquivos afetados antes de aplicá-los.",
       ],
-    ],
-    newcomer: "NOVO NO PHOXIA DEVKIT?",
-    newcomerTitle: "O caminho recomendado",
-    newcomerSteps: [
-      "Instale o Phoxia DevKit",
-      "Selecione Claude Code, Codex ou ambos",
-      "Escolha Adicionar, Substituir ou Atualizar",
-      "Escolha uma predefinição oficial",
-      "Revise os arquivos afetados",
-      "Aplique localmente",
-      "Execute a verificação",
-      "Conheça a configuração avançada",
     ],
     install: "O CAMINHO RECOMENDADO",
     installTitle: "Configure seu projeto com um comando.",
