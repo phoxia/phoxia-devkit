@@ -869,9 +869,9 @@
     },
     {
       "path": "site/src/lib/components/Header.svelte",
-      "bytes": 1961,
-      "words": 174,
-      "sha256": "11aafc2a9c8d50b7bde2db337de7caa06115b2c93bed8182590ad349e871b898"
+      "bytes": 4303,
+      "words": 398,
+      "sha256": "0c9c5d8b30536702e583dd742018feb7d986942078400c387d55c6f93455ac8e"
     },
     {
       "path": "site/src/lib/components/LegalPage.svelte",
@@ -953,9 +953,9 @@
     },
     {
       "path": "site/src/routes/+layout.svelte",
-      "bytes": 944,
-      "words": 81,
-      "sha256": "1d39fb4792c6b6299d0eb7c8538efb12e4636ced1d391eb6e5e9230678f953ba"
+      "bytes": 1863,
+      "words": 166,
+      "sha256": "64fa7a62f6c91bdd12ec6d13e7ed234bf4660b3957c8a5ae4b4c0a3d58d9e56c"
     },
     {
       "path": "site/src/routes/+layout.ts",
